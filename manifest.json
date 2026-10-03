@@ -1,0 +1,22 @@
+{
+  "name": "dresserie — Found the fit",
+  "short_name": "dresserie",
+  "description": "Drop any fashion screenshot to decode the vibe and find wearable Indian dupes under ₹2K/₹5K.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#583b32",
+  "theme_color": "#583b32",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=192&q=80",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=512&q=80",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
