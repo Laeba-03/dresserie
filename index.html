@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#583b32">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="description" content="dresserie — Drop any fashion screenshot and decode the vibe into wearable, matching Indian dupes across Myntra, Zara India, Savana, and Mango.">
-  <title>dresserie — Found the fit</title>
+  <meta name="description" content="dresserie — Drop any fashion screenshot and find real matching pieces on Myntra, Ajio, Zara India, and Nykaa Fashion.">
+  <title>dresserie — Real Outfit Dupe Search</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -181,8 +181,8 @@
     }
 
     h1 {
-      font: 600 45px/0.95 "Playfair Display", serif;
-      letter-spacing: -2.9px;
+      font: 600 42px/0.95 "Playfair Display", serif;
+      letter-spacing: -2.5px;
       margin: 9px 0 14px;
       max-width: 360px;
     }
@@ -200,128 +200,6 @@
       max-width: 345px;
     }
 
-    /* Prompt Card Stack */
-    .prompt-stack {
-      height: 254px;
-      margin-top: 19px;
-      position: relative;
-      overflow: visible;
-    }
-
-    .prompt-card {
-      position: absolute;
-      border: 0;
-      background: #fff9f8;
-      color: var(--brown);
-      text-align: left;
-      padding: 13px 12px;
-      width: 154px;
-      min-height: 94px;
-      box-shadow: 0 8px 0 #d9abb6, 0 13px 22px rgba(98, 51, 67, 0.16);
-      transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .prompt-card b {
-      font: 600 18px/1.05 "Playfair Display", serif;
-      display: block;
-      color: var(--ink);
-    }
-
-    .prompt-card small {
-      font: 600 9px "DM Mono", monospace;
-      letter-spacing: 0.5px;
-      color: var(--red);
-      text-transform: uppercase;
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .prompt-card::after {
-      position: absolute;
-      right: 9px;
-      top: 6px;
-      font: 600 20px "Caveat", cursive;
-      color: var(--red);
-    }
-
-    .prompt-card[data-vibe="downtown"] {
-      left: 12px;
-      top: 22px;
-      transform: rotate(-4deg);
-      background: #fff4f5;
-    }
-    .prompt-card[data-vibe="downtown"]::after { content: "🖤"; font-size: 14px; }
-
-    .prompt-card[data-vibe="coquette"] {
-      left: 188px;
-      top: 12px;
-      width: 164px;
-      min-height: 104px;
-      transform: rotate(3deg);
-      background: #fffaf0;
-    }
-    .prompt-card[data-vibe="coquette"]::after { content: "🎀"; font-size: 14px; }
-
-    .prompt-card[data-vibe="office"] {
-      left: 43px;
-      top: 138px;
-      transform: rotate(3deg);
-      background: #eff4fb;
-    }
-    .prompt-card[data-vibe="office"]::after { content: "💼"; font-size: 14px; }
-
-    .prompt-card[data-vibe="oldmoney"] {
-      left: 220px;
-      top: 139px;
-      width: 166px;
-      min-height: 94px;
-      transform: rotate(-3deg);
-      background: #f2eafa;
-    }
-    .prompt-card[data-vibe="oldmoney"]::after { content: "☕"; font-size: 14px; }
-
-    .prompt-card:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 11px 0 #cfa0ac, 0 16px 26px rgba(98, 51, 67, 0.22);
-    }
-
-    .prompt-card.active {
-      transform: translateY(-6px) rotate(0deg);
-      outline: 2.5px solid var(--red);
-      box-shadow: 0 12px 0 #c795a2, 0 18px 28px rgba(98, 51, 67, 0.25);
-      z-index: 5 !important;
-    }
-
-    .prompt-stack .scribble {
-      position: absolute;
-      z-index: 4;
-      font: 600 20px "Caveat", cursive;
-      color: var(--red);
-      right: 11px;
-      top: 112px;
-      transform: rotate(-5deg);
-      pointer-events: none;
-      transition: all 0.25s ease;
-      white-space: nowrap;
-    }
-
-    .prompt-stack .star {
-      position: absolute;
-      z-index: 5;
-      color: #b67722;
-      font-size: 24px;
-      pointer-events: none;
-      user-select: none;
-    }
-
-    .prompt-stack .s1 { left: 169px; top: 54px; }
-    .prompt-stack .s2 { right: 28px; bottom: 13px; }
-
     /* Upload Area */
     .upload-area {
       padding: 18px;
@@ -329,10 +207,10 @@
     }
 
     .drop {
-      border: 1.5px dashed #dbaeb7;
-      border-radius: 18px;
+      border: 2px dashed #dbaeb7;
+      border-radius: 20px;
       background: #fff5f5;
-      padding: 22px 16px 20px;
+      padding: 24px 16px 22px;
       text-align: center;
       transition: all 0.2s ease;
       cursor: pointer;
@@ -352,13 +230,13 @@
     }
 
     .drop strong {
-      font-size: 17px;
+      font-size: 18px;
       display: block;
       color: var(--ink);
     }
 
     .drop p {
-      font-size: 11.5px;
+      font-size: 12px;
       color: var(--muted);
       margin: 6px 0 16px;
       line-height: 1.4;
@@ -370,14 +248,14 @@
       color: #fff;
       border-radius: 12px;
       width: 100%;
-      height: 49px;
+      height: 50px;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 14.5px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      box-shadow: 0 4px 12px rgba(38, 27, 32, 0.16);
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(38, 27, 32, 0.16);
       transition: transform 0.15s, background 0.15s;
     }
 
@@ -410,51 +288,36 @@
       text-decoration: underline;
     }
 
-    /* Fast Aesthetic Demo Carousel */
-    .demo-preset-carousel {
-      margin-top: 18px;
-      padding-top: 16px;
-      border-top: 1px dashed #dcaeb9;
+    /* Live Search Stores Banner */
+    .stores-banner {
+      background: #fff;
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .demo-preset-carousel .title {
+    .stores-banner span {
       font: 600 10.5px "DM Mono", monospace;
       color: var(--brown);
       text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 8px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
 
-    .preset-row {
+    .stores-badges {
       display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      padding-bottom: 4px;
+      gap: 6px;
     }
 
-    .preset-pill {
-      background: #fff;
+    .store-tag {
+      background: var(--pink2);
+      color: var(--red);
+      font: 600 9.5px "DM Mono", monospace;
+      padding: 3px 7px;
+      border-radius: 6px;
       border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 6px 12px;
-      font-size: 11px;
-      font-weight: 600;
-      white-space: nowrap;
-      color: var(--brown);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      transition: all 0.15s;
-    }
-
-    .preset-pill:hover, .preset-pill.active {
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
     }
 
     /* Flow Section */
@@ -464,7 +327,7 @@
       padding: 22px 18px 24px;
     }
 
-    .flow h2, .section-title {
+    .flow h2 {
       font: 600 25px/1.05 "Playfair Display", serif;
       letter-spacing: -1.4px;
       margin: 0;
@@ -525,558 +388,317 @@
       to { transform: translateX(-50%); }
     }
 
-    .marquee:hover {
-      animation-play-state: paused;
-    }
-
-    /* Demo Section */
-    .demo {
-      padding: 30px 18px 27px;
+    /* Quick Inspo Demo Grid */
+    .demo-grid-sec {
+      padding: 26px 18px;
       background: #fcebef;
     }
 
-    .demo-intro {
-      font: 600 34px/0.96 "Playfair Display", serif;
-      letter-spacing: -2px;
-      margin: 8px 0 19px;
+    .demo-grid-sec h2 {
+      font: 600 24px "Playfair Display", serif;
+      margin: 0 0 6px;
     }
 
-    .transform {
+    .demo-grid-sec p {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    .inspo-grid {
       display: grid;
-      grid-template-columns: 1fr 27px 1fr;
-      align-items: center;
-      gap: 4px;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
     }
 
-    .trans-img {
-      position: relative;
-      border-radius: 12px;
+    .inspo-card {
+      background: #fff;
+      border-radius: 14px;
       overflow: hidden;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(88, 59, 50, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .inspo-card:hover {
+      transform: translateY(-3px);
       box-shadow: 0 8px 18px rgba(88, 59, 50, 0.12);
     }
 
-    .trans-img img {
-      height: 195px;
+    .inspo-card img {
+      height: 165px;
       width: 100%;
       object-fit: cover;
     }
 
-    .trans-img label {
-      position: absolute;
-      bottom: 8px;
-      left: 8px;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 4px 7px;
-      font: 600 8px "DM Mono", monospace;
-      letter-spacing: 0.6px;
-      border-radius: 4px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    .inspo-card-info {
+      padding: 10px 10px 12px;
     }
 
-    .arrow {
-      text-align: center;
-      font-size: 20px;
+    .inspo-card-info b {
+      font: 600 13px "Playfair Display", serif;
+      display: block;
+      color: var(--ink);
+    }
+
+    .inspo-card-info span {
+      font: 600 9.5px "DM Mono", monospace;
       color: var(--red);
-      font-weight: bold;
+      display: block;
+      margin-top: 3px;
     }
 
-    .decode {
-      margin-top: 16px;
-      padding: 16px;
-      background: var(--pink2);
+    /* RESULTS VIEW (DYNAMIC OUTFIT SEARCH ENGINE) */
+    .results {
+      display: none;
+    }
+
+    .results.show {
+      display: block;
+    }
+
+    .res-top {
+      padding: 16px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      background: #f9dce1;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .res-top b {
+      font: 600 20px "Playfair Display", serif;
+      color: var(--ink);
+    }
+
+    .text-btn {
+      border: 0;
+      background: none;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--red);
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .text-btn:hover {
+      background: rgba(188, 51, 66, 0.08);
+    }
+
+    /* Result Preview Section */
+    .result-photo-wrap {
+      margin: 18px 18px 0;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(88, 59, 50, 0.16);
+      background: #000;
+    }
+
+    .result-photo-wrap img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .reverse-lens-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(38, 27, 32, 0.85);
+      color: #fff;
+      font: 600 10px "DM Mono", monospace;
+      padding: 6px 10px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .reverse-lens-btn:hover {
+      background: var(--red);
+    }
+
+    /* Piece Breakdown & Search Section */
+    .breakdown-sec {
+      padding: 22px 18px;
+      background: #fcebef;
+    }
+
+    .breakdown-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .breakdown-header h3 {
+      font: 600 22px "Playfair Display", serif;
+      margin: 0;
+    }
+
+    .piece-count-badge {
+      font: 600 10px "DM Mono", monospace;
+      color: var(--red);
+      background: #fff;
+      padding: 4px 8px;
       border-radius: 12px;
-      border: 1px solid rgba(188, 51, 66, 0.12);
-      transform: rotate(-0.75deg);
+      border: 1px solid var(--line);
+    }
+
+    /* Individual Garment Search Card */
+    .garment-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 14px;
+      border: 1px solid var(--line);
       box-shadow: 0 4px 14px rgba(88, 59, 50, 0.05);
     }
 
-    .decode-title {
-      font: 600 10px "DM Mono", monospace;
-      letter-spacing: 1px;
-      color: var(--red);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .vibe {
-      font: 600 22px "Playfair Display", serif;
-      margin: 6px 0 8px;
-      color: var(--ink);
-    }
-
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .chip {
-      font-size: 11px;
-      background: #ffffff;
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 5px 10px;
-      color: var(--brown);
-      font-weight: 500;
-    }
-
-    /* Style Switcher Bar in Results */
-    .style-switch-bar {
-      margin-top: 14px;
-      background: rgba(255, 255, 255, 0.7);
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-    }
-
-    .style-switch-bar small {
-      font: 600 9px "DM Mono", monospace;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    .style-pills {
-      display: flex;
-      gap: 6px;
-      overflow-x: auto;
-      padding-bottom: 2px;
-    }
-
-    .style-pill {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 5px 10px;
-      font-size: 10px;
-      font-weight: 600;
-      white-space: nowrap;
-      cursor: pointer;
-    }
-
-    .style-pill.active {
-      background: var(--red);
-      color: #fff;
-      border-color: var(--red);
-    }
-
-    .outfit-head {
+    .garment-card-top {
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
-      margin-top: 24px;
+      align-items: flex-start;
+      margin-bottom: 10px;
     }
 
-    .outfit-head h3 {
-      font: 600 21px "Playfair Display", serif;
-      margin: 0;
-    }
-
-    .match {
-      font: 600 10px "DM Mono", monospace;
-      color: var(--red);
-      background: #fff;
-      padding: 4px 9px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-    }
-
-    .prod-row {
-      display: flex;
-      gap: 12px;
-      margin-top: 14px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-      scrollbar-width: thin;
-      scrollbar-color: var(--pink) transparent;
-    }
-
-    .prod-row::-webkit-scrollbar { height: 4px; }
-    .prod-row::-webkit-scrollbar-thumb { background: var(--pink); border-radius: 4px; }
-
-    .prod {
-      width: 140px;
-      flex: none;
-      background: #ffffff;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 3px 8px rgba(88, 59, 50, 0.05);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .prod:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(88, 59, 50, 0.1);
-    }
-
-    .prod-img-wrap {
-      position: relative;
-      height: 145px;
-      overflow: hidden;
-      background: #f7eff1;
-    }
-
-    .prod img {
-      width: 100%;
-      height: 145px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .prod:hover img {
-      transform: scale(1.04);
-    }
-
-    .prod-info {
-      padding: 8px 9px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      justify-content: space-between;
-    }
-
-    .prod small {
-      font-size: 9.5px;
-      color: var(--muted);
-      display: block;
-      margin-bottom: 2px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .prod b {
-      font-size: 11.5px;
-      display: block;
-      color: var(--ink);
-      line-height: 1.25;
-      height: 28px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-    }
-
-    .prod-price-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 6px;
-    }
-
-    .prod span {
-      font: 600 11.5px "DM Mono", monospace;
-      color: var(--brown);
-    }
-
-    .prod-buy-btn {
-      background: var(--pink2);
-      color: var(--red);
+    .garment-cat-pill {
       font: 600 9.5px "DM Mono", monospace;
-      padding: 4px 8px;
+      text-transform: uppercase;
+      color: var(--red);
+      background: var(--pink2);
+      padding: 3px 8px;
       border-radius: 6px;
+    }
+
+    .garment-title {
+      font: 600 16px "Playfair Display", serif;
+      margin: 4px 0 2px;
+      color: var(--ink);
+    }
+
+    .garment-desc {
+      font-size: 11.5px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    /* Indian Stores Search Grid */
+    .store-buttons-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .store-search-btn {
+      background: #faf6f7;
       border: 1px solid var(--line);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 2px;
-      transition: background 0.15s;
-    }
-
-    .prod-buy-btn:hover {
-      background: var(--red);
-      color: #fff;
-      border-color: var(--red);
-    }
-
-    .look-total {
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ink);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 18px;
-      padding: 14px 16px;
-      background: #ffffff;
-      border-radius: 12px;
-      border: 1px solid var(--line);
+      text-decoration: none;
+      transition: all 0.15s ease;
     }
 
-    .look-total b {
-      font: 600 18px "Playfair Display", serif;
+    .store-search-btn:hover {
+      background: var(--brown);
+      color: #fff;
+      border-color: var(--brown);
+      transform: translateY(-1px);
     }
 
-    .look-total span {
-      font: 600 17px "DM Mono", monospace;
-      color: var(--red);
+    .store-search-btn.primary-store {
+      background: var(--red);
+      color: #fff;
+      border-color: var(--red);
+      grid-column: 1 / -1;
+      padding: 10px 14px;
+      font-size: 12.5px;
     }
 
-    .alt-actions {
+    .store-search-btn.primary-store:hover {
+      background: var(--red-hover);
+    }
+
+    .store-search-btn span.badge {
+      font: 600 9px "DM Mono", monospace;
+      opacity: 0.85;
+    }
+
+    /* Custom Garment Search Input */
+    .custom-search-box {
+      margin-top: 10px;
       display: flex;
-      gap: 8px;
-      margin-top: 12px;
-      overflow-x: auto;
-      padding-bottom: 2px;
+      gap: 6px;
     }
 
-    .alt {
+    .custom-search-box input {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: 8px;
       border: 1px solid var(--line);
+      font-size: 12px;
+      outline: none;
       background: #fff;
-      border-radius: 22px;
-      padding: 8px 13px;
-      font-size: 11px;
-      font-weight: 500;
-      white-space: nowrap;
-      color: var(--brown);
-      cursor: pointer;
     }
 
-    .alt:hover, .alt.active {
+    .custom-search-box button {
       background: var(--ink);
       color: #fff;
-      border-color: var(--ink);
-    }
-
-    /* Budget Dupe Section */
-    .budget {
-      padding: 26px 18px 28px;
-      background: var(--sage);
-    }
-
-    .budget p {
-      font-size: 12.5px;
-      color: var(--brown);
-      margin: 7px 0 15px;
-    }
-
-    .tabs {
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      padding-bottom: 4px;
-    }
-
-    .tab {
-      background: #f8ffe7;
-      border: 1px solid #b5cc70;
-      color: var(--brown);
-      border-radius: 20px;
-      white-space: nowrap;
-      padding: 8px 14px;
-      font-size: 11.5px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .tab:hover {
-      background: #effacb;
-    }
-
-    .tab.active {
-      background: var(--brown);
-      border-color: var(--brown);
-      color: #fff8f1;
-    }
-
-    /* Cores Section */
-    .cores {
-      padding: 29px 0 26px;
-      background: var(--lav);
-    }
-
-    .section-heading {
-      padding: 0 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-
-    .section-heading a {
-      font-size: 11.5px;
-      color: #8a596a;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .section-heading a:hover {
-      text-decoration: underline;
-    }
-
-    .core-scroll {
-      display: flex;
-      overflow-x: auto;
-      gap: 12px;
-      padding: 16px 18px 4px;
-    }
-
-    .core {
-      width: 145px;
-      flex: none;
-      position: relative;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .core:hover {
-      transform: translateY(-3px);
-    }
-
-    .core img {
-      height: 185px;
-      width: 145px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 6px 14px rgba(88, 59, 50, 0.12);
-    }
-
-    .core:nth-child(even) {
-      margin-top: 16px;
-    }
-
-    .core-info {
-      margin-top: 8px;
-    }
-
-    .core-info b {
-      font: 600 14px "Playfair Display", serif;
-      display: block;
-      color: var(--ink);
-    }
-
-    .core-info span {
-      font: 500 13px "Caveat", cursive;
-      color: var(--red);
-      display: block;
-      line-height: 1.1;
-    }
-
-    /* Obsessed Section */
-    .obsessed {
-      padding: 29px 18px;
-      background: var(--blue);
-    }
-
-    .feed {
-      columns: 2;
-      column-gap: 10px;
-      margin-top: 15px;
-    }
-
-    .feed-card {
-      break-inside: avoid;
-      margin-bottom: 11px;
-      background: #f9fdff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(88, 59, 50, 0.06);
-      padding-bottom: 10px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .feed-card:hover {
-      transform: translateY(-2px);
-    }
-
-    .feed-card img {
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .feed-card:nth-child(1) img { height: 203px; }
-    .feed-card:nth-child(2) img { height: 143px; }
-    .feed-card:nth-child(3) img { height: 142px; }
-    .feed-card:nth-child(4) img { height: 202px; }
-
-    .feed-card b {
       font-size: 11px;
-      padding: 8px 8px 0;
-      display: block;
-      color: var(--ink);
+      font-weight: 600;
+      padding: 0 12px;
+      border-radius: 8px;
     }
 
-    .feed-card span {
-      font: 600 9px "DM Mono", monospace;
-      color: var(--red);
-      padding: 3px 8px 0;
-      display: block;
+    /* Sticky Bottom Bar */
+    .shopbar {
+      position: sticky;
+      bottom: 69px;
+      background: rgba(255, 241, 244, 0.96);
+      backdrop-filter: blur(12px);
+      padding: 12px 18px;
+      border-top: 1px solid var(--line);
+      z-index: 50;
+      display: flex;
+      gap: 10px;
     }
 
-    /* Moodboard Card */
-    .moodboard {
-      margin: 10px 18px 24px;
-      background: var(--brown);
-      color: #fff;
-      padding: 24px 20px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: 0 10px 24px rgba(88, 59, 50, 0.22);
-    }
-
-    .moodboard::after {
-      content: '♡';
-      position: absolute;
-      right: -8px;
-      bottom: -32px;
-      font: 130px "Playfair Display", serif;
-      color: rgba(255, 255, 255, 0.12);
-      pointer-events: none;
-    }
-
-    .moodboard h2 {
-      font: 600 27px/0.98 "Playfair Display", serif;
-      margin: 0;
-      max-width: 250px;
-      color: #fff8f2;
-    }
-
-    .moodboard p {
-      font-size: 12px;
-      line-height: 1.45;
-      color: #f8e6df;
-      max-width: 260px;
-      margin: 10px 0 16px;
-    }
-
-    .moodboard button {
-      background: var(--yellow);
-      color: var(--brown);
+    .shopbar button {
+      flex: 1;
+      height: 50px;
       border: 0;
-      border-radius: 20px;
-      padding: 10px 16px;
-      font-size: 12px;
+      border-radius: 12px;
+      background: var(--red);
+      color: #fff;
       font-weight: 600;
-      display: inline-flex;
+      font-size: 14.5px;
+      box-shadow: 0 6px 16px rgba(188, 51, 66, 0.28);
+      cursor: pointer;
+      display: flex;
       align-items: center;
-      gap: 4px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+      justify-content: center;
+      gap: 6px;
     }
 
-    /* Footer */
-    .footer {
-      padding: 30px 18px 36px;
-      color: var(--muted);
-      font-size: 12px;
-      text-align: center;
-      font-family: "Playfair Display", serif;
-      font-weight: 600;
-    }
-
-    .footer span {
-      display: inline-block;
-      margin-top: 5px;
-      font-family: "DM Sans", sans-serif;
-      font-size: 10.5px;
-      color: var(--muted);
-      font-weight: 400;
+    .shopbar button:hover {
+      background: var(--red-hover);
     }
 
     /* Nav Bar */
@@ -1144,7 +766,91 @@
       margin-top: -2px;
     }
 
-    /* Overlay / Loading Screen */
+    /* Modal / Drawer */
+    .drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 250;
+      background: rgba(38, 27, 32, 0.55);
+      backdrop-filter: blur(4px);
+    }
+
+    .drawer.show {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .drawer-content {
+      background: var(--cream);
+      max-width: 480px;
+      width: 100%;
+      max-height: 85vh;
+      border-radius: 24px 24px 0 0;
+      padding: 24px 20px 36px;
+      overflow-y: auto;
+      box-shadow: 0 -10px 30px rgba(0,0,0,0.25);
+      animation: slide-up 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes slide-up {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    .drawer-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+
+    .drawer-head h3 {
+      font: 600 22px "Playfair Display", serif;
+      margin: 0;
+    }
+
+    .close-btn {
+      font-size: 24px;
+      color: var(--muted);
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 6px;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      z-index: 300;
+      bottom: 88px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--ink);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 24px;
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .toast.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Loading Overlay */
     .overlay {
       display: none;
       position: fixed;
@@ -1209,303 +915,6 @@
       50% { opacity: 1; }
     }
 
-    /* Results Screen */
-    .results {
-      display: none;
-    }
-
-    .results.show {
-      display: block;
-    }
-
-    .res-top {
-      padding: 16px 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--line);
-      background: #f9dce1;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .res-top b {
-      font: 600 20px "Playfair Display", serif;
-      color: var(--ink);
-    }
-
-    .text-btn {
-      border: 0;
-      background: none;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--red);
-      padding: 4px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .text-btn:hover {
-      background: rgba(188, 51, 66, 0.08);
-    }
-
-    .result-photo {
-      margin: 17px 18px 0;
-      position: relative;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 10px 24px rgba(88, 59, 50, 0.14);
-    }
-
-    .result-photo img {
-      width: 100%;
-      height: 270px;
-      object-fit: cover;
-    }
-
-    .result-photo::after {
-      content: 'YOUR VERSION, UNLOCKED ✦';
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      background: var(--yellow);
-      color: var(--brown);
-      padding: 6px 9px;
-      font: 600 9px "DM Mono", monospace;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .ai-model-tag {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(38, 27, 32, 0.78);
-      color: #fff;
-      font: 600 9px "DM Mono", monospace;
-      padding: 4px 8px;
-      border-radius: 20px;
-      backdrop-filter: blur(4px);
-      letter-spacing: 0.4px;
-    }
-
-    .personal {
-      margin: 22px 18px;
-      padding: 18px;
-      background: var(--lav);
-      border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(88, 59, 50, 0.05);
-    }
-
-    .personal h2 {
-      font: 600 23px "Playfair Display", serif;
-      margin: 0;
-      color: var(--ink);
-    }
-
-    .personal p {
-      font-size: 11.5px;
-      margin: 4px 0 12px;
-      color: var(--brown);
-    }
-
-    .pref {
-      display: flex;
-      gap: 7px;
-      flex-wrap: wrap;
-    }
-
-    .pref button {
-      font-size: 11px;
-      border: 1px solid #bdabd2;
-      background: rgba(255, 255, 255, 0.85);
-      color: var(--brown);
-      border-radius: 20px;
-      padding: 7px 11px;
-      font-weight: 500;
-      transition: all 0.18s;
-    }
-
-    .pref button:hover {
-      background: #fff;
-    }
-
-    .pref button.active {
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
-    }
-
-    .shopbar {
-      position: sticky;
-      bottom: 69px;
-      background: rgba(255, 241, 244, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 12px 18px;
-      border-top: 1px solid var(--line);
-      z-index: 50;
-      display: flex;
-      gap: 10px;
-    }
-
-    .shopbar button {
-      flex: 1;
-      height: 50px;
-      border: 0;
-      border-radius: 12px;
-      background: var(--red);
-      color: #fff;
-      font-weight: 600;
-      font-size: 14.5px;
-      box-shadow: 0 6px 16px rgba(188, 51, 66, 0.28);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-
-    .shopbar button:hover {
-      background: var(--red-hover);
-      transform: translateY(-1px);
-    }
-
-    /* Modal / Drawer */
-    .drawer {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 250;
-      background: rgba(38, 27, 32, 0.55);
-      backdrop-filter: blur(4px);
-    }
-
-    .drawer.show {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-    }
-
-    .drawer-content {
-      background: var(--cream);
-      max-width: 480px;
-      width: 100%;
-      max-height: 85vh;
-      border-radius: 24px 24px 0 0;
-      padding: 24px 20px 36px;
-      overflow-y: auto;
-      box-shadow: 0 -10px 30px rgba(0,0,0,0.25);
-      animation: slide-up 0.26s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    @keyframes slide-up {
-      from { transform: translateY(100%); }
-      to { transform: translateY(0); }
-    }
-
-    .drawer-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 14px;
-      margin-bottom: 16px;
-    }
-
-    .drawer-head h3 {
-      font: 600 22px "Playfair Display", serif;
-      margin: 0;
-    }
-
-    .close-btn {
-      font-size: 24px;
-      color: var(--muted);
-      cursor: pointer;
-      line-height: 1;
-      padding: 2px 6px;
-    }
-
-    /* Toast Notification */
-    .toast {
-      position: fixed;
-      z-index: 300;
-      bottom: 88px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: var(--ink);
-      color: #fff;
-      padding: 12px 18px;
-      border-radius: 24px;
-      font-size: 12px;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      white-space: nowrap;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-      opacity: 0;
-      pointer-events: none;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .toast.show {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateX(-50%) translateY(0);
-    }
-
-    /* Direct Shop Modal / Drawer */
-    .shop-modal-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .shop-item-card {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: #fff;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-    }
-
-    .shop-item-card img {
-      width: 48px;
-      height: 48px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .shop-item-card .info {
-      flex: 1;
-      margin: 0 12px;
-    }
-
-    .shop-item-card .info b {
-      font-size: 12px;
-      display: block;
-      color: var(--ink);
-    }
-
-    .shop-item-card .info small {
-      font-size: 10px;
-      color: var(--muted);
-    }
-
-    .shop-item-card .btn-link {
-      background: var(--red);
-      color: #fff;
-      font: 600 11px "DM Mono", monospace;
-      padding: 7px 11px;
-      border-radius: 8px;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-
     @media (min-width: 700px) {
       body {
         padding: 30px 0;
@@ -1544,239 +953,109 @@
     </header>
 
     <section class="hero">
-      <div class="kicker">For the fashion obsessed</div>
-      <h1>Seen it.<br>Loved it.<br><em>Found it.</em></h1>
-      <p class="hero-copy">Drop an outfit screenshot and we’ll identify the aesthetic and find matching wearable Indian dupes.</p>
-
-      <div class="prompt-stack" aria-label="Ways to use dresserie">
-        <button class="prompt-card" data-vibe="downtown">
-          <small>DOWNTOWN</small>
-          <b>Leather &<br>Combat Boots</b>
-        </button>
-        <button class="prompt-card active" data-vibe="coquette">
-          <small>COQUETTE</small>
-          <b>Lace & Mary<br>Janes ✦</b>
-        </button>
-        <button class="prompt-card" data-vibe="office">
-          <small>OFFICE SIREN</small>
-          <b>Tailored<br>Waistcoat</b>
-        </button>
-        <button class="prompt-card" data-vibe="oldmoney">
-          <small>OLD MONEY</small>
-          <b>Linen &<br>Loafers ✦</b>
-        </button>
-
-        <span class="scribble" id="cloudNote">tap an aesthetic</span>
-        <span class="star s1">✦</span>
-        <span class="star s2">✷</span>
-      </div>
+      <div class="kicker">Live Search Across Indian Stores</div>
+      <h1>Recreate any<br>outfit on<br><em>Myntra & Zara.</em></h1>
+      <p class="hero-copy">Drop any fashion photo. We identify each garment and search live inventory on Myntra, Ajio, Zara India, and Nykaa.</p>
     </section>
 
-    <!-- DROP / UPLOAD SECTION -->
+    <!-- UPLOAD ZONE -->
     <section class="upload-area">
       <div class="drop" id="dropZone">
-        <div class="tiny">the fit drop zone</div>
-        <strong>What are we finding today?</strong>
+        <div class="tiny">Drop your inspiration photo here</div>
+        <strong>Upload the outfit to recreate</strong>
         <p>Drop a screenshot, paste from clipboard (<kbd>Ctrl+V</kbd>), or snap a photo.</p>
         
-        <!-- File & Camera Inputs -->
         <input id="file" type="file" accept="image/*" hidden>
         <input id="cameraFile" type="file" accept="image/*" capture="environment" hidden>
         
         <button class="primary" id="dropBtn">
-          <span>＋</span> Drop the fit ♡
+          <span>＋</span> Select Outfit Photo ♡
         </button>
       </div>
       
       <div class="upload-options-row">
         <button class="sub-btn" id="cameraBtn">📷 Camera snap</button>
         <span style="color:var(--line)">·</span>
-        <button class="sub-btn" id="tryBtn">Try Coquette demo →</button>
+        <button class="sub-btn" id="pasteHintBtn">📋 Paste screenshot (Ctrl+V)</button>
       </div>
 
-      <!-- Quick Preset Aesthetic Switcher -->
-      <div class="demo-preset-carousel">
-        <div class="title">
-          <span>Or test an aesthetic directly</span>
-          <span style="color:var(--red)">tap to dupe →</span>
-        </div>
-        <div class="preset-row">
-          <button class="preset-pill active" data-preset="coquette">🎀 Coquette</button>
-          <button class="preset-pill" data-preset="downtown">🖤 Downtown Girl</button>
-          <button class="preset-pill" data-preset="office">💼 Office Siren</button>
-          <button class="preset-pill" data-preset="oldmoney">☕ Old Money</button>
-          <button class="preset-pill" data-preset="datenight">🍷 Date Night Slip</button>
-          <button class="preset-pill" data-preset="casual">🧢 Model Off-Duty</button>
+      <!-- Real Stores Supported -->
+      <div class="stores-banner">
+        <span>Live Search In:</span>
+        <div class="stores-badges">
+          <span class="store-tag">Myntra</span>
+          <span class="store-tag">Ajio</span>
+          <span class="store-tag">Zara</span>
+          <span class="store-tag">Nykaa</span>
+          <span class="store-tag">Savana</span>
         </div>
       </div>
     </section>
 
-    <!-- HOW IT WORKS FLOW -->
+    <!-- HOW IT WORKS -->
     <section class="flow">
-      <h2>Inspo, but make it<br>actually wearable.</h2>
+      <h2>How dresserie works for you:</h2>
       <div class="flow-steps">
         <div class="flow-step">
           <div class="flow-num">01</div>
-          <b>Drop any fit</b><br>Upload screenshot, paste, or snap photo.
+          <b>Upload Photo</b><br>Drop any outfit photo from IG, Pinterest, or camera.
         </div>
         <div class="flow-step">
           <div class="flow-num">02</div>
-          <b>Color & vibe match</b><br>AI isolates silhouettes & core aesthetic.
+          <b>Break Down Fit</b><br>Isolate each piece (top, pants, shoes, bag).
         </div>
         <div class="flow-step">
           <div class="flow-num">03</div>
-          <b>Shop your dupe</b><br>Direct links to Myntra, Zara, Savana & Mango.
+          <b>Shop Live</b><br>1-Click direct search on Myntra, Ajio & Zara India.
         </div>
       </div>
     </section>
 
-    <!-- ANIMATED TICKER -->
+    <!-- TICKER -->
     <div class="marquee-wrapper">
       <div class="marquee">
-        COQUETTE &nbsp; ✦ &nbsp; OFFICE SIREN &nbsp; ✦ &nbsp; DOWNTOWN GIRL &nbsp; ✦ &nbsp; MODEL OFF DUTY &nbsp; ✦ &nbsp; OLD MONEY &nbsp; ✦ &nbsp; ROMANTIC MINIMALIST &nbsp; ✦ &nbsp; COQUETTE &nbsp; ✦ &nbsp; OFFICE SIREN &nbsp; ✦ &nbsp; DOWNTOWN GIRL &nbsp; ✦ &nbsp; MODEL OFF DUTY &nbsp; ✦ &nbsp;
+        LIVE MYNTRA SEARCH &nbsp; ✦ &nbsp; AJIO DUPES &nbsp; ✦ &nbsp; ZARA INDIA &nbsp; ✦ &nbsp; SAVANA PICKS &nbsp; ✦ &nbsp; NYKAA FASHION &nbsp; ✦ &nbsp; GOOGLE SHOPPING INDIA &nbsp; ✦ &nbsp;
       </div>
     </div>
 
-    <!-- DEMO LOOK PREVIEW -->
-    <section class="demo">
-      <div class="kicker">A little preview</div>
-      <div class="demo-intro">Okay wait…<br>we found your look.</div>
-      
-      <div class="transform">
-        <div class="trans-img">
-          <img id="demoInspoImg" alt="inspiration outfit" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=350&q=85">
-          <label>INSPIRATION</label>
-        </div>
-        <div class="arrow">↓</div>
-        <div class="trans-img">
-          <img id="demoVersionImg" alt="recreated outfit" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=350&q=85">
-          <label>YOUR VERSION</label>
-        </div>
-      </div>
+    <!-- SAMPLE INSPIRATIONS GRID (PROVES INSTANT RECREATION) -->
+    <section class="demo-grid-sec">
+      <h2>Or test with these popular looks:</h2>
+      <p>Tap any outfit to see how dresserie breaks it down into live store search queries:</p>
 
-      <div class="decode">
-        <div class="decode-title">
-          <span>AI DECODE</span>
-          <span style="font-size:9px;color:var(--muted)">DETECTED AESTHETIC</span>
-        </div>
-        <div class="vibe" id="demoVibeTitle">Coquette · Romantic · Feminine</div>
-        <div class="chips" id="demoChips">
-          <span class="chip">lace trim top</span>
-          <span class="chip">denim mini</span>
-          <span class="chip">Mary Janes</span>
-          <span class="chip">mini shoulder bag</span>
-          <span class="chip">gold jewelry</span>
-        </div>
-      </div>
-
-      <div class="outfit-head">
-        <h3>Steal the look</h3>
-        <span class="match" id="demoMatchBadge">92% VIBE MATCH</span>
-      </div>
-
-      <div class="prod-row" id="demoProducts"></div>
-
-      <div class="look-total">
-        <div>
-          <b>Complete look</b>
-          <div style="font-size:11px;color:var(--muted)">Curated across Myntra, Newme, Mochi</div>
-        </div>
-        <span id="demoTotal">₹4,897</span>
-      </div>
-
-      <div class="alt-actions">
-        <button class="alt" data-tweak="cheaper">Make it cheaper</button>
-        <button class="alt" data-tweak="elevated">More elevated</button>
-        <button class="alt" data-tweak="vibe">Change the vibe</button>
-      </div>
-    </section>
-
-    <!-- BUDGET CHOOSER -->
-    <section class="budget">
-      <div class="kicker">Choose your chaos</div>
-      <h2 class="section-title">Same vibe. Different<br>damage to your bank account.</h2>
-      <p>Every version understands the assignment.</p>
-      <div class="tabs" id="budgets">
-        <button class="tab" data-tier="2k">Under ₹2K</button>
-        <button class="tab active" data-tier="5k">Under ₹5K</button>
-        <button class="tab" data-tier="10k">Under ₹10K</button>
-        <button class="tab" data-tier="treat">Treat Yourself</button>
-      </div>
-    </section>
-
-    <!-- CORES SECTION -->
-    <section class="cores">
-      <div class="section-heading">
-        <h2 class="section-title">Pick your core ♡</h2>
-        <a id="seeAllCores">see all →</a>
-      </div>
-      <div class="core-scroll">
-        <article class="core" data-core="coquette">
-          <img alt="coquette fashion" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=300&q=85">
-          <div class="core-info">
-            <b>COQUETTE</b>
-            <span>bows, lace & pretty things</span>
+      <div class="inspo-grid">
+        <article class="inspo-card" data-preset="streetwear">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=350&q=80" alt="Leather jacket look">
+          <div class="inspo-card-info">
+            <b>Biker Jacket & Boots</b>
+            <span>4 PIECES IDENTIFIED →</span>
           </div>
         </article>
-        <article class="core" data-core="office">
-          <img alt="office siren fashion" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=300&q=85">
-          <div class="core-info">
-            <b>OFFICE SIREN</b>
-            <span>sharp tailoring, no texts back</span>
+
+        <article class="inspo-card" data-preset="tailored">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=350&q=80" alt="Tailored suit look">
+          <div class="inspo-card-info">
+            <b>Waistcoat & Trousers</b>
+            <span>3 PIECES IDENTIFIED →</span>
           </div>
         </article>
-        <article class="core" data-core="downtown">
-          <img alt="downtown girl fashion" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=300&q=85">
-          <div class="core-info">
-            <b>DOWNTOWN GIRL</b>
-            <span>late-night energy & leather</span>
+
+        <article class="inspo-card" data-preset="quietluxury">
+          <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=350&q=80" alt="Old money look">
+          <div class="inspo-card-info">
+            <b>Linen Shirt & Loafers</b>
+            <span>4 PIECES IDENTIFIED →</span>
           </div>
         </article>
-        <article class="core" data-core="oldmoney">
-          <img alt="old money fashion" src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=300&q=85">
-          <div class="core-info">
-            <b>OLD MONEY</b>
-            <span>polished, effortless always</span>
+
+        <article class="inspo-card" data-preset="datenight">
+          <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=350&q=80" alt="Slip dress look">
+          <div class="inspo-card-info">
+            <b>Red Satin Slip Gown</b>
+            <span>3 PIECES IDENTIFIED →</span>
           </div>
         </article>
       </div>
-    </section>
-
-    <!-- CURRENTLY OBSESSED MASONRY -->
-    <section class="obsessed">
-      <div class="section-heading">
-        <h2 class="section-title">Currently obsessed</h2>
-        <a id="moreLooks">more looks →</a>
-      </div>
-      <div class="feed">
-        <article class="feed-card" data-preset="datenight">
-          <img alt="tomato girl look" src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=360&q=85">
-          <b>Tomato girl, IRL</b>
-          <span>STEAL THE LOOK</span>
-        </article>
-        <article class="feed-card" data-preset="casual">
-          <img alt="casual fashion look" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=300&q=85">
-          <b>Model off-duty under ₹5K</b>
-          <span>92% MATCH</span>
-        </article>
-        <article class="feed-card" data-preset="downtown">
-          <img alt="streetwear fashion" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=300&q=85">
-          <b>Very downtown, very you</b>
-          <span>DOWNTOWN GIRL</span>
-        </article>
-        <article class="feed-card" data-preset="datenight">
-          <img alt="feminine dress fashion" src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=360&q=85">
-          <b>Date night, but effortless</b>
-          <span>ROMANTIC GIRL</span>
-        </article>
-      </div>
-    </section>
-
-    <!-- MOODBOARD CALLOUT -->
-    <section class="moodboard">
-      <h2>Build the wardrobe your saved folder deserves.</h2>
-      <p>Make moodboards for every era you’re about to enter.</p>
-      <button id="openMoodboardBtn">＋ Start a moodboard</button>
     </section>
 
     <!-- FOOTER -->
@@ -1786,91 +1065,49 @@
     </footer>
   </div>
 
-  <!-- RESULTS SCREEN -->
+  <!-- RESULTS SCREEN (REAL OUTFIT SEARCH HUB) -->
   <section class="results" id="results">
     <header class="res-top">
-      <button class="text-btn" id="backBtn">← new fit</button>
-      <b>Found the fit</b>
+      <button class="text-btn" id="backBtn">← new photo</button>
+      <b>Recreate This Fit</b>
       <button class="text-btn" id="saveFitBtn">♡ save</button>
     </header>
 
-    <div class="result-photo">
-      <img id="resultImg" alt="your outfit inspiration" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=650&q=85">
-      <div class="ai-model-tag" id="aiModelTag">AI Engine: Vision Matcher</div>
+    <!-- Photo Preview -->
+    <div class="result-photo-wrap">
+      <img id="resultImg" alt="uploaded outfit">
+      <a id="googleLensLink" href="https://lens.google.com/" target="_blank" rel="noopener" class="reverse-lens-btn">
+        <span>🔍</span> Search Image on Google Lens ↗
+      </a>
     </div>
 
-    <section class="demo">
-      <div class="kicker">This fit is giving</div>
-      <div class="vibe" id="resultVibe">Coquette, but grown up.</div>
-      <div class="chips" id="resultChips">
-        <!-- Rendered dynamically -->
-      </div>
-
-      <!-- Quick Switcher in Results in case AI misclassified! -->
-      <div class="style-switch-bar">
-        <small>Not the right vibe? Switch silhouette:</small>
-        <div class="style-pills" id="resultStylePills">
-          <button class="style-pill" data-style="coquette">🎀 Coquette</button>
-          <button class="style-pill" data-style="downtown">🖤 Downtown</button>
-          <button class="style-pill" data-style="office">💼 Office Siren</button>
-          <button class="style-pill" data-style="oldmoney">☕ Old Money</button>
-          <button class="style-pill" data-style="datenight">🍷 Date Night</button>
-          <button class="style-pill" data-style="casual">🧢 Model Off-Duty</button>
-        </div>
-      </div>
-
-      <div class="outfit-head">
-        <h3>Your wearable version</h3>
-        <span class="match" id="resultMatchBadge">94% VIBE MATCH</span>
-      </div>
-
-      <div class="prod-row" id="resultProducts"></div>
-
-      <div class="look-total">
+    <!-- Garment Breakdown -->
+    <section class="breakdown-sec">
+      <div class="breakdown-header">
         <div>
-          <b>Complete look</b>
-          <div style="font-size:11px;color:var(--muted)">Curated direct buy links across Indian stores</div>
+          <h3 id="detectedAestheticTitle">Identified Garments</h3>
+          <div style="font-size:11.5px;color:var(--muted);margin-top:2px">Tap any store button to open live matching search results</div>
         </div>
-        <span id="resultTotal">₹4,897</span>
+        <span class="piece-count-badge" id="pieceCountBadge">4 PIECES FOUND</span>
       </div>
 
-      <div class="alt-actions">
-        <button class="alt" id="actionSave">♡ Save look</button>
-        <button class="alt" id="actionShare">↗ Share fit</button>
-        <button class="alt" id="actionBoard">＋ Add to Board</button>
-        <button class="alt" id="actionPolaroid">📸 Export Card</button>
-      </div>
-    </section>
+      <!-- Live Search Cards Container -->
+      <div id="garmentsContainer"></div>
 
-    <section class="budget">
-      <div class="kicker">Shop your comfort zone</div>
-      <h2 class="section-title">Same energy.<br>Different price tag.</h2>
-      <div class="tabs" id="resultBudgets">
-        <button class="tab" data-tier="2k">Under ₹2K</button>
-        <button class="tab active" data-tier="5k">Under ₹5K</button>
-        <button class="tab" data-tier="10k">Under ₹10K</button>
-        <button class="tab" data-tier="treat">Treat Yourself</button>
+      <!-- Add New Custom Piece to Search -->
+      <div style="background:#fff;border-radius:14px;padding:14px;border:1px dashed var(--line);margin-top:14px">
+        <b style="font-size:12.5px;display:block;margin-bottom:6px">Want to search for another piece from this photo?</b>
+        <div class="custom-search-box">
+          <input type="text" id="addPieceInput" placeholder="e.g. Green Beanie, Silver Chain, Chunky Scarf">
+          <button id="addPieceBtn">+ Search</button>
+        </div>
       </div>
     </section>
 
-    <section class="personal">
-      <h2>Fine-tune this look?</h2>
-      <p>Adjust styling attributes. We’ll re-curate the pieces.</p>
-      <div class="pref" id="prefButtons">
-        <button data-mod="feminine">More feminine</button>
-        <button data-mod="minimal">More minimal</button>
-        <button data-mod="trendy">More trendy</button>
-        <button data-mod="modest">More modest</button>
-        <button data-mod="affordable">More affordable</button>
-        <button data-mod="elevated">More elevated</button>
-        <button data-mod="casual">More casual</button>
-        <button data-mod="statement">More statement</button>
-      </div>
-    </section>
-
+    <!-- Sticky Bottom Bar -->
     <div class="shopbar">
-      <button id="shopBtn">
-        <span>🛍</span> Shop Complete Look (All Links) →
+      <button id="searchAllMyntraBtn">
+        <span>🛍</span> Open All Pieces on Myntra ↗
       </button>
     </div>
   </section>
@@ -1881,21 +1118,13 @@
       <span style="font-size:16px">⌂</span>
       <span>Home</span>
     </button>
-    <button id="navDiscover">
-      <span style="font-size:16px">⌕</span>
-      <span>Discover</span>
-    </button>
-    <button class="upload-nav" id="uploadNav" aria-label="Drop a fit">
+    <button id="navUpload" class="upload-nav" aria-label="Drop a fit">
       <span>＋</span>
       <span>Upload</span>
     </button>
     <button id="navSaved">
       <span style="font-size:16px">♡</span>
       <span>Saved</span>
-    </button>
-    <button id="navBoards">
-      <span style="font-size:16px">▦</span>
-      <span>Boards</span>
     </button>
   </nav>
 
@@ -1906,40 +1135,8 @@
         <h3 id="savedClosetHeading">Saved Fits</h3>
         <button class="close-btn" id="closeDrawerBtn">&times;</button>
       </div>
-      <p style="font-size:12px;color:var(--muted);margin-top:0">Your curated dream wardrobe, ready to shop anytime.</p>
+      <p style="font-size:12px;color:var(--muted);margin-top:0">Your bookmarked outfits and search links.</p>
       <div id="savedListContainer" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px"></div>
-    </div>
-  </div>
-
-  <!-- MOODBOARDS DRAWER -->
-  <div class="drawer" id="moodboardModal">
-    <div class="drawer-content">
-      <div class="drawer-head">
-        <h3>My Moodboards</h3>
-        <button class="close-btn" id="closeMoodModalBtn">&times;</button>
-      </div>
-      <p style="font-size:12px;color:var(--muted);margin-top:0">Curate aesthetic boards for every season and trip.</p>
-      
-      <div style="margin-top:12px">
-        <div style="display:flex;gap:8px">
-          <input id="boardNameInput" type="text" placeholder="e.g. Euro Pecan Summer, Office Siren Era" style="flex:1;padding:12px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;outline:none;background:#fff">
-          <button class="primary" id="saveBoardBtn" style="width:auto;padding:0 16px">Create ✦</button>
-        </div>
-      </div>
-
-      <div id="boardsListContainer" style="margin-top:20px;display:flex;flex-direction:column;gap:10px"></div>
-    </div>
-  </div>
-
-  <!-- DIRECT SHOPPING DRAWER -->
-  <div class="drawer" id="directShopDrawer">
-    <div class="drawer-content">
-      <div class="drawer-head">
-        <h3>Direct Shopping Links</h3>
-        <button class="close-btn" id="closeShopDrawerBtn">&times;</button>
-      </div>
-      <p style="font-size:12px;color:var(--muted);margin-top:0">Instant buy links across verified Indian stores.</p>
-      <div class="shop-modal-list" id="shopModalList"></div>
     </div>
   </div>
 
@@ -1950,11 +1147,11 @@
         <h3>AI Vision Settings</h3>
         <button class="close-btn" id="closeSettingsBtn">&times;</button>
       </div>
-      <p style="font-size:12.5px;color:var(--ink);line-height:1.45;margin-top:0">
-        dresserie comes with a <b>built-in Smart Aesthetic Matcher</b> with dedicated catalogs for Downtown Girl, Office Siren, Old Money, Coquette, Date Night, and Model Off-Duty!
+      <p style="font-size:13px;color:var(--ink);line-height:1.45;margin-top:0">
+        <b>Want 100% automatic AI recognition for every uploaded photo?</b>
       </p>
-      <p style="font-size:12px;color:var(--muted);line-height:1.4">
-        Want deep computer vision for <i>every custom photo</i>? Add your free Google Gemini API key below.
+      <p style="font-size:12px;color:var(--muted);line-height:1.45">
+        Add your free Google Gemini API key below. When enabled, Google's Multimodal Vision AI will examine your photo and automatically identify every garment, fabric, and color!
       </p>
 
       <div style="margin-top:14px">
@@ -1964,18 +1161,18 @@
           <a href="https://aistudio.google.com/app/apikey" target="_blank" style="font-size:11px;color:var(--red);font-weight:600">Get a free key at Google AI Studio ↗</a>
           <button id="clearKeyBtn" style="font-size:11px;color:var(--muted)">Clear</button>
         </div>
-        <button class="primary" id="saveKeyBtn" style="margin-top:16px">Save Settings ✦</button>
+        <button class="primary" id="saveKeyBtn" style="margin-top:16px">Save & Activate AI Vision ✦</button>
       </div>
     </div>
   </div>
 </main>
 
-<!-- LOADING POLAROID OVERLAY -->
+<!-- LOADING OVERLAY -->
 <div class="overlay" id="loading">
   <div class="load-screen">
     <img id="loadImg" alt="uploaded fashion look" src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=450&q=85">
-    <h2>Okay… decoding<br>the vibe.</h2>
-    <p id="loadText">Finding the pieces…</p>
+    <h2>Analyzing outfit…</h2>
+    <p id="loadText">Extracting garment silhouettes…</p>
     <div class="dots">● ● ●</div>
   </div>
 </div>
@@ -1983,410 +1180,200 @@
 <!-- TOAST -->
 <div class="toast" id="toast">
   <span>✦</span>
-  <span id="toastMsg">Your cart is about to eat ♡</span>
+  <span id="toastMsg">Search queries generated!</span>
 </div>
 
-<!-- HIDDEN CANVAS FOR COLOR SAMPLING & EXPORT -->
 <canvas id="hiddenCanvas" style="display:none"></canvas>
 
 <script>
   /* ==========================================================================
-     DRESSERIE FULL-SPECTRUM AESTHETIC ENGINE: 6 DISTINCT STYLES & TIERS
+     DRESSERIE REAL LIVE STORE SEARCH ENGINE (MYNTRA, AJIO, ZARA, NYKAA)
      ========================================================================== */
 
-  // Retailer URL Generator for Indian Fashion Stores
-  function getRetailerLink(category, query, store) {
-    const q = encodeURIComponent(query);
-    switch (store.toLowerCase()) {
-      case 'myntra':
-        return `https://www.myntra.com/${q}`;
-      case 'zara':
-      case 'zara india':
-        return `https://www.zara.com/in/en/search?searchTerm=${q}`;
-      case 'mango':
-      case 'mango india':
-      case 'mango premium':
-        return `https://shop.mango.com/in/search?kw=${q}`;
-      case 'newme':
-        return `https://newme.asia/search?q=${q}`;
-      case 'savana':
-      case 'urbanic':
-        return `https://www.google.com/search?q=${encodeURIComponent('savana india ' + query)}`;
-      case 'mochi':
-        return `https://www.mochishoes.com/search?q=${q}`;
-      case 'lavie':
-        return `https://www.lavieworld.com/search?q=${q}`;
-      case 'h&m':
-      case 'h&m india':
-        return `https://www2.hm.com/en_in/search-results.html?q=${q}`;
-      default:
-        return `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(query + ' India buy')}`;
-    }
-  }
+  // Store URL Builders with Exact Query Formatting
+  const storeSearchUrls = {
+    myntra: (q) => `https://www.myntra.com/${encodeURIComponent(q.replace(/\s+/g, '-'))}`,
+    ajio: (q) => `https://www.ajio.com/search/?text=${encodeURIComponent(q)}`,
+    zara: (q) => `https://www.zara.com/in/en/search?searchTerm=${encodeURIComponent(q)}`,
+    nykaa: (q) => `https://www.nykaafashion.com/catalogsearch/result/?q=${encodeURIComponent(q)}`,
+    savana: (q) => `https://www.google.com/search?q=${encodeURIComponent('site:savana.com ' + q)}`,
+    google: (q) => `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(q + ' buy online India')}`
+  };
 
-  // 6 COMPLETE DISTINCT AESTHETIC DATABASES WITH TIERS & MATCHING CLOTHING
-  const aestheticCatalogs = {
-    // 1. COQUETTE (Lace, bows, denim, Mary Janes)
-    'coquette': {
-      vibeTitle: 'Coquette · Romantic Feminine',
-      chips: ['Lace Trim Top', 'Low-Rise Denim Skirt', 'Mary Jane Flats', 'Mini Baguette Bag', 'Gold Choker'],
-      matchRate: '95% VIBE MATCH',
-      versionImg: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=400&q=85',
-      tiers: {
-        '2k': {
-          total: '₹1,847',
-          items: [
-            { cat: 'Top', name: 'Ribbed Lace Camisole', store: 'Savana', price: '₹499', query: 'white lace trim cami top', img: 'https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Pleated Mini Tennis Skirt', store: 'Urbanic', price: '₹599', query: 'pleated tennis skirt white', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Bow Ballet Flats', store: 'Bata', price: '₹499', query: 'ballet flats bow shoes', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Jewelry', name: 'Pebble Pearl Choker', store: 'Myntra', price: '₹250', query: 'pearl choker necklace', img: 'https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '5k': {
-          total: '₹4,897',
-          items: [
-            { cat: 'Top', name: 'Lace Trim Milkmaid Top', store: 'Mango India', price: '₹1,499', query: 'white lace trim top mango', img: 'https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Low-Rise Denim Mini Skirt', store: 'Newme', price: '₹1,299', query: 'denim mini skirt blue', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Double-Strap Mary Janes', store: 'Mochi', price: '₹1,499', query: 'black mary jane flats mochi', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bag', name: 'Mini Shoulder Baguette', store: 'Lavie', price: '₹600', query: 'mini baguette shoulder bag', img: 'https://images.unsplash.com/photo-1585488434455-5f80ef1f8cbe?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '10k': {
-          total: '₹8,990',
-          items: [
-            { cat: 'Top', name: 'Embroidered Corset Blouse', store: 'Zara India', price: '₹2,990', query: 'corset blouse embroidery zara', img: 'https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Raw Hem Denim Skirt', store: 'Levi’s', price: '₹2,790', query: 'levis denim skirt raw hem', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Patent Chunky Mary Janes', store: 'Myntra', price: '₹1,999', query: 'chunky patent mary jane shoes', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bag', name: 'Baguette Leather Pouch', store: 'Mango India', price: '₹2,199', query: 'leather baguette bag mango', img: 'https://images.unsplash.com/photo-1585488434455-5f80ef1f8cbe?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        'treat': {
-          total: '₹22,450',
-          items: [
-            { cat: 'Top', name: 'Silk Georgette Camisole', store: 'Mango Premium', price: '₹6,500', query: 'silk georgette camisole top', img: 'https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Designer Pleated Skort', store: 'Zara Premium', price: '₹4,990', query: 'pleated skort structured', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Leather Mary Jane Heels', store: 'Steve Madden', price: '₹7,999', query: 'steve madden mary jane shoes', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        }
-      }
+  // Preset Demonstrations for Instant Testing
+  const presetLookData = {
+    'streetwear': {
+      title: 'Biker Jacket & Chunky Boots',
+      img: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=650&q=85',
+      pieces: [
+        { cat: 'Outerwear', name: 'Oversized Faux Leather Biker Jacket', query: 'oversized leather jacket women black', desc: 'Heavyweight moto silhouette with silver hardware' },
+        { cat: 'Bottom', name: 'Wide-Leg Washed Carpenter Jeans', query: 'wide leg baggy cargo jeans', desc: 'Relaxed skater fit in vintage washed denim' },
+        { cat: 'Footwear', name: 'Chunky Platform Combat Boots', query: 'platform combat boots black', desc: 'Lug-sole ankle boots' },
+        { cat: 'Bag', name: 'Nylon Slouchy Crossbody Bag', query: 'nylon slouchy shoulder bag', desc: 'Minimalist city utility pouch' }
+      ]
     },
-
-    // 2. DOWNTOWN GIRL (Leather, black combat boots, oversized jackets, edgy energy)
-    'downtown': {
-      vibeTitle: 'Downtown Girl · Late-Night Edgy',
-      chips: ['Faux Leather Bomber', 'Baggy Carpenter Jeans', 'Chunky Platform Boots', 'Silver Chain Bag', 'Tinted Sunglasses'],
-      matchRate: '96% VIBE MATCH',
-      versionImg: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=400&q=85',
-      tiers: {
-        '2k': {
-          total: '₹1,999',
-          items: [
-            { cat: 'Top', name: 'Oversized Washed Graphic Tee', store: 'Savana', price: '₹599', query: 'vintage oversized graphic tshirt washed black', img: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Wide-Leg Black Cargo Pants', store: 'Urbanic', price: '₹899', query: 'black wide leg parachute cargo pants', img: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Chunky Lug-Sole Boots', store: 'Myntra', price: '₹500', query: 'chunky platform combat boots black', img: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '5k': {
-          total: '₹4,796',
-          items: [
-            { cat: 'Jacket', name: 'Oversized Biker Leather Jacket', store: 'Newme', price: '₹1,999', query: 'oversized faux leather biker jacket black', img: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Mid-Rise Baggy Skate Jeans', store: 'H&M India', price: '₹1,499', query: 'baggy wide skate jeans washed grey', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Platform Chelsea Combat Boots', store: 'Mochi', price: '₹1,299', query: 'platform chelsea boots black', img: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '10k': {
-          total: '₹9,490',
-          items: [
-            { cat: 'Jacket', name: 'Distressed Vintage Leather Jacket', store: 'Zara India', price: '₹4,990', query: 'distressed faux leather jacket zara', img: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Straight Loose Carpenter Denim', store: 'Levi’s', price: '₹2,990', query: 'levis loose straight jeans black', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Chunky Platform Lace-up Boots', store: 'Zara India', price: '₹2,590', query: 'platform lace up ankle boots zara', img: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        'treat': {
-          total: '₹24,990',
-          items: [
-            { cat: 'Jacket', name: 'Heavy Grain Leather Moto Jacket', store: 'Zara Premium', price: '₹12,990', query: 'genuine leather motorcycle jacket', img: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Chunky Sole Leather Biker Boots', store: 'Steve Madden', price: '₹11,999', query: 'steve madden leather combat boots', img: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?auto=format&fit=crop&w=250&q=80' }
-          ]
-        }
-      }
+    'tailored': {
+      title: 'Tailored Waistcoat & Trousers',
+      img: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=650&q=85',
+      pieces: [
+        { cat: 'Top', name: 'Pinstripe Tailored Waistcoat', query: 'tailored vest waistcoat pinstripe', desc: 'Fitted button-front vest' },
+        { cat: 'Bottom', name: 'High-Waisted Pleated Trousers', query: 'high waist pleated wide trousers', desc: 'Flowy structured suiting pants' },
+        { cat: 'Footwear', name: 'Pointed Slingback Kitten Heels', query: 'pointed slingback heels black', desc: 'Glossy patent slingback pumps' }
+      ]
     },
-
-    // 3. OFFICE SIREN (Sharp tailoring, pinstripes, pointed slingbacks, glasses)
-    'office': {
-      vibeTitle: 'Office Siren · Sharp Minimalist',
-      chips: ['Fitted Pinstripe Waistcoat', 'Pleated Wide Trousers', 'Pointed Slingback Heels', 'Tortoise Bayonetta Glasses', 'Structured Mini Bag'],
-      matchRate: '94% VIBE MATCH',
-      versionImg: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=400&q=85',
-      tiers: {
-        '2k': {
-          total: '₹1,950',
-          items: [
-            { cat: 'Top', name: 'Tailored Sleeveless Waistcoat', store: 'Savana', price: '₹650', query: 'tailored button waistcoat vest black', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'High-Waist Pleated Trousers', store: 'Urbanic', price: '₹799', query: 'high waist wide leg pleated trousers grey', img: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Pointed Toe Kitten Heels', store: 'Myntra', price: '₹499', query: 'pointed toe slingback kitten heel shoes', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '5k': {
-          total: '₹4,997',
-          items: [
-            { cat: 'Top', name: 'Fitted Pinstripe Vest', store: 'H&M India', price: '₹1,499', query: 'pinstripe waistcoat vest tailored', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Structured Wide-Leg Slacks', store: 'Mango India', price: '₹1,999', query: 'wide leg pleated tailored trousers mango', img: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Pointed Slingback Pumps', store: 'Mochi', price: '₹1,499', query: 'pointed slingback heels black mochi', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '10k': {
-          total: '₹9,280',
-          items: [
-            { cat: 'Top', name: 'Tailored Wool-Blend Blazer', store: 'Zara India', price: '₹4,990', query: 'tailored fitted blazer black zara', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Pleated Straight Leg Pants', store: 'Zara India', price: '₹2,990', query: 'pleated trousers straight fit zara', img: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Glossy Patent Slingbacks', store: 'Mango India', price: '₹1,299', query: 'patent leather slingback shoes mango', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        'treat': {
-          total: '₹21,990',
-          items: [
-            { cat: 'Suiting', name: 'Italian Wool Structured Blazer', store: 'Mango Premium', price: '₹12,990', query: 'pure wool tailored blazer', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Leather Pointed Slingback Pumps', store: 'Steve Madden', price: '₹8,990', query: 'steve madden pointed slingbacks', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        }
-      }
+    'quietluxury': {
+      title: 'Linen Shirt & Loafers',
+      img: 'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=650&q=85',
+      pieces: [
+        { cat: 'Top', name: '100% Pure Linen Relaxed Shirt', query: 'pure linen shirt beige women', desc: 'Camp-collar breathable woven button-down' },
+        { cat: 'Bottom', name: 'Ecru Pleated Chino Trousers', query: 'cream pleated linen trousers', desc: 'Tailored neutral trousers' },
+        { cat: 'Footwear', name: 'Leather Penny Loafers', query: 'leather penny loafers brown', desc: 'Classic horsebit slip-on shoes' },
+        { cat: 'Accessories', name: 'Tortoise Oval Sunglasses', query: 'tortoise shell oval sunglasses', desc: 'Vintage luxury frames' }
+      ]
     },
-
-    // 4. OLD MONEY (Linen shirts, cable knits, ecru trousers, loafers)
-    'oldmoney': {
-      vibeTitle: 'Old Money · Quiet Luxury',
-      chips: ['Linen Button-Down', 'Ecru Pleated Trousers', 'Penny Loafers', 'Leather Woven Bag', 'Tortoise Frames'],
-      matchRate: '93% VIBE MATCH',
-      versionImg: 'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=400&q=85',
-      tiers: {
-        '2k': {
-          total: '₹1,899',
-          items: [
-            { cat: 'Top', name: 'Oversized Linen-Look Shirt', store: 'Savana', price: '₹599', query: 'linen cotton striped button down shirt beige', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Pleated Cream Wide Trousers', store: 'Urbanic', price: '₹799', query: 'cream pleated wide leg trousers ecru', img: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Classic Penny Loafers', store: 'Bata', price: '₹499', query: 'brown penny loafers classic shoes', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '5k': {
-          total: '₹4,897',
-          items: [
-            { cat: 'Top', name: 'Pure Linen Relaxed Shirt', store: 'Mango India', price: '₹1,899', query: 'pure linen relaxed shirt mango white', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Tailored Linen-Blend Chinos', store: 'Zara India', price: '₹1,799', query: 'linen blend trousers beige zara', img: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Snaffle Bit Leather Loafers', store: 'Mochi', price: '₹1,199', query: 'horsebit leather loafers brown mochi', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '10k': {
-          total: '₹8,980',
-          items: [
-            { cat: 'Top', name: '100% Linen Camp Collar Shirt', store: 'Massimo Dutti India', price: '₹3,990', query: '100 percent linen shirt beige', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Double Pleated Linen Slacks', store: 'Mango India', price: '₹2,990', query: 'double pleated linen trousers mango', img: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Handcrafted Leather Loafers', store: 'Hush Puppies', price: '₹1,999', query: 'genuine leather penny loafers', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        'treat': {
-          total: '₹23,500',
-          items: [
-            { cat: 'Top', name: 'Silk-Linen Ribbed Knit Polo', store: 'Mango Premium', price: '₹8,500', query: 'silk linen polo shirt luxury', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Italian Calfskin Bit Loafers', store: 'Steve Madden', price: '₹15,000', query: 'italian calfskin loafers gold horsebit', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        }
-      }
-    },
-
-    // 5. DATE NIGHT / TOMATO GIRL (Satin slip dress, kitten heels, evening clutch)
     'datenight': {
-      vibeTitle: 'Date Night · Tomato Girl Slip',
-      chips: ['Cowl-Neck Satin Midi Dress', 'Strappy Kitten Heels', 'Gold Huggie Earrings', 'Ruched Metallic Clutch', 'Glossy Lip Tint'],
-      matchRate: '95% VIBE MATCH',
-      versionImg: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=400&q=85',
-      tiers: {
-        '2k': {
-          total: '₹1,798',
-          items: [
-            { cat: 'Dress', name: 'Satin Cowl-Neck Slip Dress', store: 'Savana', price: '₹899', query: 'cowl neck satin slip dress red midi', img: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Strappy Block Kitten Heels', store: 'Myntra', price: '₹599', query: 'strappy kitten heel sandals gold', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bag', name: 'Ruched Evening Pouch', store: 'StreetStyleStore', price: '₹299', query: 'mini ruched evening clutch bag', img: 'https://images.unsplash.com/photo-1585488434455-5f80ef1f8cbe?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '5k': {
-          total: '₹4,797',
-          items: [
-            { cat: 'Dress', name: 'Ruched Satin Midi Slip Dress', store: 'Newme', price: '₹1,799', query: 'satin midi dress cowl neck burgundy', img: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Metallic Strappy Ankle Heels', store: 'Mochi', price: '₹1,999', query: 'metallic strappy sandals heels mochi', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bag', name: 'Mini Crossbody Evening Bag', store: 'Lavie', price: '₹999', query: 'evening party clutch lavie', img: 'https://images.unsplash.com/photo-1585488434455-5f80ef1f8cbe?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '10k': {
-          total: '₹8,980',
-          items: [
-            { cat: 'Dress', name: 'Open-Back Silk Slip Dress', store: 'Zara India', price: '₹4,990', query: 'satin dress backless zara', img: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Lace-Up Kitten Heel Sandals', store: 'Zara India', price: '₹2,990', query: 'strappy leather kitten heels zara', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Jewelry', name: 'Zircon Tennis Necklace', store: 'Giva India', price: '₹1,000', query: 'silver tennis choker necklace giva', img: 'https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        'treat': {
-          total: '₹22,990',
-          items: [
-            { cat: 'Dress', name: 'Pure Silk Backless Gown', store: 'Mango Premium', price: '₹14,990', query: 'pure silk gown cowl neck', img: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Sculptural Heel Satin Pumps', store: 'Steve Madden', price: '₹7,999', query: 'steve madden satin stiletto sandals', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        }
-      }
-    },
-
-    // 6. MODEL OFF-DUTY (Trench, seamless tank, straight jeans, retro sneakers)
-    'casual': {
-      vibeTitle: 'Model Off-Duty · Casual Clean',
-      chips: ['Oversized Duster Trench', 'Seamless White Ribbed Tank', 'Straight-Leg 90s Jeans', 'Retro Samba Sneakers', 'Chunky Gold Hoops'],
-      matchRate: '94% VIBE MATCH',
-      versionImg: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=400&q=85',
-      tiers: {
-        '2k': {
-          total: '₹1,897',
-          items: [
-            { cat: 'Top', name: 'Square Neck Ribbed Tank', store: 'Savana', price: '₹399', query: 'ribbed seamless white tank top', img: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'High-Rise Straight Jeans', store: 'Urbanic', price: '₹899', query: 'straight leg blue jeans high waist', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Retro Canvas Skate Sneakers', store: 'Myntra', price: '₹599', query: 'retro gum sole skate sneakers white', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '5k': {
-          total: '₹4,897',
-          items: [
-            { cat: 'Top', name: 'Lightweight Duster Trench', store: 'H&M India', price: '₹1,999', query: 'oversized trench coat beige hm', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Vintage 90s Straight Jeans', store: 'Mango India', price: '₹1,899', query: 'vintage straight fit jeans mango', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Classic Retro White Trainers', store: 'Bata', price: '₹999', query: 'classic low top white sneakers', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        '10k': {
-          total: '₹9,480',
-          items: [
-            { cat: 'Jacket', name: 'Double Breasted Trench Coat', store: 'Zara India', price: '₹5,990', query: 'double breasted trench coat zara beige', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Bottom', name: 'Original 501 Straight Jeans', store: 'Levi’s', price: '₹3,490', query: 'levis 501 original straight jeans blue', img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=250&q=80' }
-          ]
-        },
-        'treat': {
-          total: '₹21,500',
-          items: [
-            { cat: 'Jacket', name: 'Water-Repellent Cotton Trench', store: 'Mango Premium', price: '₹13,500', query: 'cotton trench coat premium', img: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=250&q=80' },
-            { cat: 'Shoes', name: 'Leather Vintage Court Sneakers', store: 'Adidas India', price: '₹7,999', query: 'adidas samba og shoes leather', img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=250&q=80' }
-          ]
-        }
-      }
+      title: 'Red Satin Slip Gown',
+      img: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=650&q=85',
+      pieces: [
+        { cat: 'Dress', name: 'Cowl-Neck Satin Midi Slip Dress', query: 'satin cowl neck slip dress red', desc: 'Glossy bias-cut evening midi dress' },
+        { cat: 'Footwear', name: 'Strappy Metallic Kitten Heels', query: 'strappy metallic kitten heels gold', desc: 'Dainty lace-up evening sandals' },
+        { cat: 'Bag', name: 'Ruched Evening Clutch', query: 'ruched evening party clutch bag', desc: 'Metallic gathering pouch' }
+      ]
     }
   };
 
-  // State Management
-  let currentAesthetic = 'coquette';
-  let currentTier = '5k';
-  let currentLookData = {
-    img: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=650&q=85'
-  };
+  // Active State
+  let activePieces = [];
+  let currentUploadedImgSrc = '';
 
-  // Core Render Engine
-  function applyAesthetic(aestheticKey, tier = '5k') {
-    const data = aestheticCatalogs[aestheticKey] || aestheticCatalogs['coquette'];
-    currentAesthetic = aestheticKey;
-    currentTier = tier;
-
-    // Update Home Demo Look
-    document.getElementById('demoVibeTitle').textContent = data.vibeTitle;
-    document.getElementById('demoMatchBadge').textContent = data.matchRate;
-    document.getElementById('demoVersionImg').src = data.versionImg;
-    document.getElementById('demoChips').innerHTML = data.chips.map(c => `<span class="chip">${c}</span>`).join('');
-    
-    // Update Results Screen
-    document.getElementById('resultVibe').textContent = data.vibeTitle;
-    document.getElementById('resultMatchBadge').textContent = data.matchRate;
-    document.getElementById('resultChips').innerHTML = data.chips.map(c => `<span class="chip">${c}</span>`).join('');
-
-    // Highlight Style Pill in Results
-    document.querySelectorAll('#resultStylePills .style-pill').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.style === aestheticKey);
-    });
-
-    // Render Products for current tier
-    renderProducts('demoProducts', aestheticKey, tier);
-    renderProducts('resultProducts', aestheticKey, tier);
-  }
-
-  // Render Product Cards
-  function renderProducts(containerId, aestheticKey, tier) {
-    const catalog = aestheticCatalogs[aestheticKey] || aestheticCatalogs['coquette'];
-    const tierData = catalog.tiers[tier] || catalog.tiers['5k'];
-    const container = document.getElementById(containerId);
-    if (!container) return;
-
-    container.innerHTML = tierData.items.map(p => {
-      const link = getRetailerLink(p.cat, p.query, p.store);
-      return `
-        <article class="prod">
-          <div class="prod-img-wrap">
-            <img src="${p.img}" alt="${p.name}" loading="lazy">
-          </div>
-          <div class="prod-info">
-            <small>${p.cat} · ${p.store}</small>
-            <b>${p.name}</b>
-            <div class="prod-price-row">
-              <span>${p.price}</span>
-              <a href="${link}" target="_blank" rel="noopener" class="prod-buy-btn">
-                Shop ↗
-              </a>
-            </div>
-          </div>
-        </article>
-      `;
-    }).join('');
-
-    if (containerId === 'demoProducts') {
-      document.getElementById('demoTotal').textContent = tierData.total;
-    } else if (containerId === 'resultProducts') {
-      document.getElementById('resultTotal').textContent = tierData.total;
-    }
-  }
-
-  // Toast Notification
+  // Toast
   function showToast(msg) {
     const t = document.getElementById('toast');
     const toastMsg = document.getElementById('toastMsg');
     if (msg) toastMsg.textContent = msg;
     t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 2500);
+    setTimeout(() => t.classList.remove('show'), 2600);
   }
 
-  // LocalStorage Helpers
-  function getSavedCloset() {
+  // Render Garment Cards into Results View
+  function renderGarmentCards() {
+    const container = document.getElementById('garmentsContainer');
+    document.getElementById('pieceCountBadge').textContent = `${activePieces.length} PIECES IDENTIFIED`;
+
+    container.innerHTML = activePieces.map((p, idx) => `
+      <article class="garment-card">
+        <div class="garment-card-top">
+          <span class="garment-cat-pill">${p.cat}</span>
+          <button onclick="removePiece(${idx})" style="font-size:11px;color:var(--muted)">Remove</button>
+        </div>
+        <div class="garment-title">${p.name}</div>
+        <div class="garment-desc">${p.desc || 'Search live inventory:'}</div>
+        
+        <div class="store-buttons-grid">
+          <a href="${storeSearchUrls.myntra(p.query)}" target="_blank" rel="noopener" class="store-search-btn primary-store">
+            <span>🛍 Search on <b>Myntra</b></span>
+            <span class="badge">Live Inventory ↗</span>
+          </a>
+          <a href="${storeSearchUrls.ajio(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+            <span>Search <b>Ajio</b></span>
+            <span>↗</span>
+          </a>
+          <a href="${storeSearchUrls.zara(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+            <span>Search <b>Zara India</b></span>
+            <span>↗</span>
+          </a>
+          <a href="${storeSearchUrls.nykaa(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+            <span>Search <b>Nykaa</b></span>
+            <span>↗</span>
+          </a>
+          <a href="${storeSearchUrls.google(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+            <span>Google Shopping</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </article>
+    `).join('');
+  }
+
+  window.removePiece = function(idx) {
+    activePieces.splice(idx, 1);
+    renderGarmentCards();
+    showToast('Piece removed from search list');
+  };
+
+  // Add Custom Piece
+  document.getElementById('addPieceBtn').onclick = () => {
+    const input = document.getElementById('addPieceInput');
+    const val = input.value.trim();
+    if (!val) return;
+    activePieces.push({
+      cat: 'Custom Garment',
+      name: val,
+      query: val,
+      desc: `Direct shopping search for ${val}`
+    });
+    input.value = '';
+    renderGarmentCards();
+    showToast(`Added "${val}" to search list ✦`);
+  };
+
+  // Search All on Myntra Action
+  document.getElementById('searchAllMyntraBtn').onclick = () => {
+    if (activePieces.length === 0) return;
+    // Open the primary piece immediately
+    const firstUrl = storeSearchUrls.myntra(activePieces[0].query);
+    window.open(firstUrl, '_blank');
+    showToast(`Opened Myntra search for "${activePieces[0].name}" 🛍`);
+  };
+
+  // Optional Gemini Multimodal API Call
+  async function callGeminiVision(base64Data, mimeType) {
+    const key = localStorage.getItem('dresserie_gemini_key');
+    if (!key) return null;
+
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
+    const prompt = `Look at this fashion photograph. List the exact garments worn by the person so they can be bought on Indian fashion e-commerce sites (Myntra/Zara/Ajio).
+    Return a strictly valid JSON object in this format:
+    {
+      "aestheticTitle": "Short stylish title describing the outfit (e.g. Vintage Leather Streetwear)",
+      "pieces": [
+        {
+          "cat": "Outerwear/Top/Bottom/Footwear/Bag/Jewelry",
+          "name": "Specific garment name (e.g. Brown Cropped Puffer Jacket)",
+          "query": "Precise 3-4 word shopping search phrase (e.g. brown cropped puffer jacket)",
+          "desc": "Short description of material/cut (e.g. Boxy fit, high collar)"
+        }
+      ]
+    }`;
+
+    const cleanBase64 = base64Data.split(',')[1] || base64Data;
+    const body = {
+      contents: [{
+        parts: [
+          { text: prompt },
+          { inlineData: { mimeType: mimeType || 'image/jpeg', data: cleanBase64 } }
+        ]
+      }],
+      generationConfig: { responseMimeType: "application/json" }
+    };
+
     try {
-      return JSON.parse(localStorage.getItem('dresserie_saved') || '[]');
-    } catch(e) { return []; }
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      const data = await res.json();
+      const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+      return JSON.parse(text);
+    } catch (e) {
+      console.warn("Gemini Vision API error:", e);
+      return null;
+    }
   }
 
-  function saveClosetItem(item) {
-    const list = getSavedCloset();
-    list.unshift(item);
-    localStorage.setItem('dresserie_saved', JSON.stringify(list));
-    updateSavedBadge();
-  }
-
-  function getMoodboards() {
-    try {
-      return JSON.parse(localStorage.getItem('dresserie_boards') || '["Euro Pecan Summer", "Office Siren Era", "Date Night Inspo"]');
-    } catch(e) { return ["Euro Pecan Summer", "Office Siren Era"]; }
-  }
-
-  function saveMoodboard(name) {
-    const list = getMoodboards();
-    if (!list.includes(name)) list.unshift(name);
-    localStorage.setItem('dresserie_boards', JSON.stringify(list));
-  }
-
-  function updateSavedBadge() {
-    const count = getSavedCloset().length || 2;
-    document.getElementById('savedBadge').textContent = count;
-  }
-
-  // Color Sampling & Image Analysis (Smart Canvas Matcher)
-  function classifyImageAesthetic(imgElement) {
+  // Automatic Color / Garment Analysis (Smart Local Vision)
+  function analyzeImageLocally(imgElement) {
     try {
       const canvas = document.getElementById('hiddenCanvas');
       const ctx = canvas.getContext('2d');
@@ -2395,62 +1382,63 @@
       ctx.drawImage(imgElement, 0, 0, 100, 100);
       const data = ctx.getImageData(0, 0, 100, 100).data;
       
-      let r = 0, g = 0, b = 0, darkPixels = 0, redPixels = 0, lightPixels = 0;
+      let r = 0, g = 0, b = 0, dark = 0, light = 0, red = 0;
       for (let i = 0; i < data.length; i += 16) {
-        const pr = data[i], pg = data[i + 1], pb = data[i + 2];
+        const pr = data[i], pg = data[i+1], pb = data[i+2];
         r += pr; g += pg; b += pb;
-        const brightness = (pr + pg + pb) / 3;
-        if (brightness < 70) darkPixels++;
-        if (brightness > 190) lightPixels++;
-        if (pr > 150 && pg < 90 && pb < 90) redPixels++;
+        const bright = (pr + pg + pb) / 3;
+        if (bright < 75) dark++;
+        if (bright > 185) light++;
+        if (pr > 140 && pg < 90 && pb < 90) red++;
       }
       const count = data.length / 16;
       const avgR = r / count, avgG = g / count, avgB = b / count;
 
-      // Classify based on dominant visual features:
-      if (redPixels / count > 0.15 || (avgR > 160 && avgG < 110)) {
-        return 'datenight'; // Tomato Girl / Date night red
+      if (red / count > 0.12 || (avgR > 160 && avgG < 110)) {
+        return presetLookData['datenight'];
       }
-      if (darkPixels / count > 0.4 || (avgR < 80 && avgG < 80 && avgB < 80)) {
-        return 'downtown'; // Black/Leather/Combat
+      if (dark / count > 0.35 || avgR < 80) {
+        return presetLookData['streetwear'];
       }
-      if (avgR > 160 && avgG > 140 && avgB < 130) {
-        return 'oldmoney'; // Beige/Camel/Chinos/Loafers
+      if (avgR > 150 && avgG > 130 && avgB < 120) {
+        return presetLookData['quietluxury'];
       }
-      if (lightPixels / count > 0.35 && avgR > 180 && avgB > 170) {
-        return 'coquette'; // Pink/Lace/Whites
-      }
-      if (Math.abs(avgR - avgG) < 15 && Math.abs(avgG - avgB) < 15 && (avgR > 90 && avgR < 170)) {
-        return 'office'; // Pinstripes/Grey/Tailored
-      }
-      return 'casual'; // Model off duty clean girl
+      return presetLookData['tailored'];
     } catch(e) {
-      return 'coquette';
+      return presetLookData['streetwear'];
     }
   }
 
-  // Open Loading Transition & Process Match
-  function openLoad(src = null, forcedAesthetic = null) {
+  // Main Processing Flow
+  async function processOutfit(imgSrc, fileBlob = null) {
+    currentUploadedImgSrc = imgSrc;
     const loadImg = document.getElementById('loadImg');
     const resultImg = document.getElementById('resultImg');
-    if (src) {
-      loadImg.src = src;
-      resultImg.src = src;
-      currentLookData.img = src;
-    }
+    loadImg.src = imgSrc;
+    resultImg.src = imgSrc;
 
     const loadScreen = document.getElementById('loading');
     const loadText = document.getElementById('loadText');
     loadScreen.classList.add('show');
-    loadText.textContent = 'Scanning garment silhouettes…';
+    loadText.textContent = 'Examining garment silhouettes…';
+
+    let geminiData = null;
+    if (fileBlob && localStorage.getItem('dresserie_gemini_key')) {
+      loadText.textContent = 'Calling Gemini Multimodal AI… ✦';
+      try {
+        const reader = new FileReader();
+        const base64Promise = new Promise(res => {
+          reader.onload = () => res(reader.result);
+          reader.readAsDataURL(fileBlob);
+        });
+        const base64 = await base64Promise;
+        geminiData = await callGeminiVision(base64, fileBlob.type);
+      } catch(e) {}
+    }
 
     setTimeout(() => {
-      loadText.textContent = 'Analyzing color tones & aesthetic… ✦';
-    }, 700);
-
-    setTimeout(() => {
-      loadText.textContent = 'Curating Indian retailer inventory…';
-    }, 1300);
+      loadText.textContent = 'Building Myntra, Ajio & Zara search queries…';
+    }, 1000);
 
     setTimeout(() => {
       loadScreen.classList.remove('show');
@@ -2458,96 +1446,54 @@
       document.getElementById('results').classList.add('show');
       window.scrollTo({ top: 0, behavior: 'instant' });
 
-      // Determine aesthetic
-      let detectedAesthetic = forcedAesthetic;
-      if (!detectedAesthetic) {
-        detectedAesthetic = classifyImageAesthetic(resultImg);
+      if (geminiData && geminiData.pieces) {
+        document.getElementById('detectedAestheticTitle').textContent = geminiData.aestheticTitle || 'Identified Garments';
+        activePieces = geminiData.pieces;
+        showToast('Decoded with Gemini Vision AI ✦');
+      } else {
+        const local = analyzeImageLocally(resultImg);
+        document.getElementById('detectedAestheticTitle').textContent = local.title;
+        activePieces = JSON.parse(JSON.stringify(local.pieces));
+        showToast('Identified garments ready to search! ✦');
       }
 
-      applyAesthetic(detectedAesthetic, currentTier);
-      showToast(`Matched: ${aestheticCatalogs[detectedAesthetic].vibeTitle} ✦`);
-    }, 2000);
+      renderGarmentCards();
+    }, 1800);
   }
 
-  // Switch aesthetic directly from Results Screen pills
-  document.getElementById('resultStylePills').addEventListener('click', (e) => {
-    const pill = e.target.closest('.style-pill');
-    if (!pill) return;
-    const styleKey = pill.dataset.style;
-    applyAesthetic(styleKey, currentTier);
-    showToast(`Switched dupe to: ${aestheticCatalogs[styleKey].vibeTitle} ✦`);
-  });
-
-  // Preset Carousel Pills in Drop Section
-  document.querySelectorAll('.preset-pill').forEach(pill => {
-    pill.addEventListener('click', () => {
-      document.querySelectorAll('.preset-pill').forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-      const preset = pill.dataset.preset;
-      applyAesthetic(preset, currentTier);
-      showToast(`Loaded ${pill.textContent} catalog ✦`);
-      openLoad(aestheticCatalogs[preset].versionImg, preset);
-    });
-  });
-
-  // Hero Prompt Cards Click
-  document.querySelectorAll('.prompt-card').forEach(card => {
-    card.addEventListener('click', () => {
-      document.querySelectorAll('.prompt-card').forEach(c => c.classList.remove('active'));
-      card.classList.add('active');
-      const vibe = card.dataset.vibe;
-      applyAesthetic(vibe, currentTier);
-      document.getElementById('cloudNote').textContent = `loaded ${card.querySelector('b').textContent.replace('<br>', ' ')} ✦`;
-      openLoad(aestheticCatalogs[vibe].versionImg, vibe);
-    });
-  });
-
-  // File Upload Handlers (File input, camera, drag-and-drop, clipboard paste)
+  // File Upload Handlers
   const fileInput = document.getElementById('file');
   const cameraInput = document.getElementById('cameraFile');
   const dropBtn = document.getElementById('dropBtn');
   const cameraBtn = document.getElementById('cameraBtn');
   const dropZone = document.getElementById('dropZone');
-  const tryBtn = document.getElementById('tryBtn');
-  const uploadNav = document.getElementById('uploadNav');
+  const navUpload = document.getElementById('navUpload');
 
   dropBtn.onclick = () => fileInput.click();
-  uploadNav.onclick = () => fileInput.click();
+  navUpload.onclick = () => fileInput.click();
   cameraBtn.onclick = () => cameraInput.click();
-  tryBtn.onclick = () => openLoad(aestheticCatalogs['coquette'].versionImg, 'coquette');
+  document.getElementById('pasteHintBtn').onclick = () => {
+    showToast('Tip: Press Ctrl+V anytime to paste a screenshot! ✦');
+  };
 
-  function handleUploadedFile(file) {
+  function handleFile(file) {
     if (!file) return;
-    const previewUrl = URL.createObjectURL(file);
-    openLoad(previewUrl);
+    const url = URL.createObjectURL(file);
+    processOutfit(url, file);
   }
 
-  fileInput.onchange = (e) => {
-    if (e.target.files && e.target.files[0]) handleUploadedFile(e.target.files[0]);
-  };
-  cameraInput.onchange = (e) => {
-    if (e.target.files && e.target.files[0]) handleUploadedFile(e.target.files[0]);
-  };
+  fileInput.onchange = (e) => { if (e.target.files?.[0]) handleFile(e.target.files[0]); };
+  cameraInput.onchange = (e) => { if (e.target.files?.[0]) handleFile(e.target.files[0]); };
 
-  // Drag and drop
-  ['dragenter', 'dragover'].forEach(name => {
-    dropZone.addEventListener(name, (e) => {
-      e.preventDefault();
-      dropZone.classList.add('dragover');
-    });
+  // Drag & Drop
+  ['dragenter', 'dragover'].forEach(n => {
+    dropZone.addEventListener(n, (e) => { e.preventDefault(); dropZone.classList.add('dragover'); });
   });
-
-  ['dragleave', 'drop'].forEach(name => {
-    dropZone.addEventListener(name, (e) => {
-      e.preventDefault();
-      dropZone.classList.remove('dragover');
-    });
+  ['dragleave', 'drop'].forEach(n => {
+    dropZone.addEventListener(n, (e) => { e.preventDefault(); dropZone.classList.remove('dragover'); });
   });
-
   dropZone.addEventListener('drop', (e) => {
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      handleUploadedFile(e.dataTransfer.files[0]);
-    }
+    if (e.dataTransfer.files?.[0]) handleFile(e.dataTransfer.files[0]);
   });
 
   // Global Clipboard Screenshot Paste (Ctrl+V)
@@ -2558,96 +1504,49 @@
       if (items[i].type.indexOf('image') !== -1) {
         const blob = items[i].getAsFile();
         showToast('Pasted screenshot detected! ✦');
-        handleUploadedFile(blob);
+        handleFile(blob);
         break;
       }
     }
   });
 
-  // Back Button from Results
+  // Preset Demonstrations Click
+  document.querySelectorAll('.inspo-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const preset = card.dataset.preset;
+      const data = presetLookData[preset];
+      if (!data) return;
+      document.getElementById('detectedAestheticTitle').textContent = data.title;
+      activePieces = JSON.parse(JSON.stringify(data.pieces));
+      currentUploadedImgSrc = data.img;
+      document.getElementById('resultImg').src = data.img;
+
+      document.getElementById('home').style.display = 'none';
+      document.getElementById('results').classList.add('show');
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      renderGarmentCards();
+      showToast(`Loaded ${data.title} pieces ✦`);
+    });
+  });
+
+  // Back Button
   document.getElementById('backBtn').onclick = () => {
     document.getElementById('results').classList.remove('show');
     document.getElementById('home').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
-  // Budget Switcher
-  function setupBudgetTabs(selector, targetContainer) {
-    const parent = document.querySelector(selector);
-    if (!parent) return;
+  // Nav Home
+  document.getElementById('navHome').onclick = () => {
+    document.getElementById('results').classList.remove('show');
+    document.getElementById('home').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-    parent.addEventListener('click', (e) => {
-      const tab = e.target.closest('.tab');
-      if (!tab) return;
-      parent.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      currentTier = tab.dataset.tier;
-      renderProducts(targetContainer, currentAesthetic, currentTier);
-      showToast(`Showing ${tab.textContent} options 🏷`);
-    });
-  }
-
-  setupBudgetTabs('#budgets', 'demoProducts');
-  setupBudgetTabs('#resultBudgets', 'resultProducts');
-
-  // Alternative Quick Tweaks
-  document.querySelectorAll('.alt-actions .alt').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tweak = btn.dataset.tweak;
-      if (tweak === 'cheaper') {
-        currentTier = '2k';
-        renderProducts('demoProducts', currentAesthetic, '2k');
-        document.querySelectorAll('#budgets .tab').forEach(t => t.classList.toggle('active', t.dataset.tier === '2k'));
-        showToast('Dupe activated! Under ₹2K version loaded 🏷');
-      } else if (tweak === 'elevated') {
-        currentTier = '10k';
-        renderProducts('demoProducts', currentAesthetic, '10k');
-        document.querySelectorAll('#budgets .tab').forEach(t => t.classList.toggle('active', t.dataset.tier === '10k'));
-        showToast('Upgraded with premium silk & structured tailoring ✦');
-      } else if (tweak === 'vibe') {
-        const nextStyle = currentAesthetic === 'coquette' ? 'office' : (currentAesthetic === 'office' ? 'downtown' : 'coquette');
-        applyAesthetic(nextStyle, currentTier);
-        showToast(`Shifted aesthetic to ${aestheticCatalogs[nextStyle].vibeTitle} ✦`);
-      }
-    });
-  });
-
-  // Core Cards Interaction
-  document.querySelectorAll('.core').forEach(core => {
-    core.addEventListener('click', () => {
-      const coreKey = core.dataset.core;
-      showToast(`Exploring the ${coreKey.toUpperCase()} archive… ✦`);
-      setTimeout(() => {
-        openLoad(aestheticCatalogs[coreKey].versionImg, coreKey);
-      }, 350);
-    });
-  });
-
-  // Obsessed Cards Interaction
-  document.querySelectorAll('.feed-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const preset = card.dataset.preset || 'downtown';
-      openLoad(aestheticCatalogs[preset].versionImg, preset);
-    });
-  });
-
-  // Drawers & Modals
-  const savedDrawer = document.getElementById('savedDrawer');
-  const moodModal = document.getElementById('moodboardModal');
-  const directShopDrawer = document.getElementById('directShopDrawer');
+  // Settings & Gemini API Modal
   const settingsModal = document.getElementById('settingsModal');
-
-  function openDrawer(drawer) { drawer.classList.add('show'); }
-  function closeDrawer(drawer) { drawer.classList.remove('show'); }
-
-  document.getElementById('openSavedBtn').onclick = () => { renderSavedCloset(); openDrawer(savedDrawer); };
-  document.getElementById('navSaved').onclick = () => { renderSavedCloset(); openDrawer(savedDrawer); };
-  document.getElementById('closeDrawerBtn').onclick = () => closeDrawer(savedDrawer);
-
-  document.getElementById('openMoodboardBtn').onclick = () => { renderBoardsList(); openDrawer(moodModal); };
-  document.getElementById('actionBoard').onclick = () => { renderBoardsList(); openDrawer(moodModal); };
-  document.getElementById('navBoards').onclick = () => { renderBoardsList(); openDrawer(moodModal); };
-  document.getElementById('closeMoodModalBtn').onclick = () => closeDrawer(moodModal);
+  const openDrawer = (d) => d.classList.add('show');
+  const closeDrawer = (d) => d.classList.remove('show');
 
   document.getElementById('openSettingsBtn').onclick = () => {
     document.getElementById('geminiApiKeyInput').value = localStorage.getItem('dresserie_gemini_key') || '';
@@ -2659,10 +1558,10 @@
     const key = document.getElementById('geminiApiKeyInput').value.trim();
     if (key) {
       localStorage.setItem('dresserie_gemini_key', key);
-      showToast('Gemini API key saved! Multimodal vision active ✦');
+      showToast('Gemini API key saved! Automatic AI vision active ✦');
     } else {
       localStorage.removeItem('dresserie_gemini_key');
-      showToast('API key removed. Using Smart Matcher ✦');
+      showToast('Key cleared. Using smart local matcher.');
     }
     closeDrawer(settingsModal);
   };
@@ -2673,14 +1572,28 @@
     showToast('Key cleared ✦');
   };
 
-  // Render Saved Closet Drawer
+  // Saved Drawer & Persistence
+  const savedDrawer = document.getElementById('savedDrawer');
+  document.getElementById('openSavedBtn').onclick = () => { renderSavedCloset(); openDrawer(savedDrawer); };
+  document.getElementById('navSaved').onclick = () => { renderSavedCloset(); openDrawer(savedDrawer); };
+  document.getElementById('closeDrawerBtn').onclick = () => closeDrawer(savedDrawer);
+
+  function getSavedCloset() {
+    try { return JSON.parse(localStorage.getItem('dresserie_saved') || '[]'); } catch(e) { return []; }
+  }
+
+  function updateSavedBadge() {
+    const list = getSavedCloset();
+    document.getElementById('savedBadge').textContent = list.length || 0;
+  }
+
   function renderSavedCloset() {
     const list = getSavedCloset();
     const container = document.getElementById('savedListContainer');
     document.getElementById('savedClosetHeading').textContent = `Saved Fits (${list.length})`;
 
     if (list.length === 0) {
-      container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--muted)">No saved looks yet. Drop a fit to save it! ♡</div>`;
+      container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--muted)">No saved fits yet. Upload a look to save it! ♡</div>`;
       return;
     }
 
@@ -2688,12 +1601,12 @@
       <div style="background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between">
         <div>
           <img src="${item.img}" style="height:140px;width:100%;object-fit:cover">
-          <b style="font-size:11.5px;display:block;padding:8px 8px 0;line-height:1.2">${item.title}</b>
-          <span style="font:600 10.5px 'DM Mono',monospace;color:var(--red);padding:3px 8px;display:block">${item.price}</span>
+          <b style="font-size:12px;display:block;padding:8px 8px 0;line-height:1.2">${item.title}</b>
+          <span style="font:600 10.5px 'DM Mono',monospace;color:var(--red);padding:3px 8px;display:block">${item.pieces.length} search queries</span>
         </div>
         <div style="padding:4px 8px 8px;display:flex;justify-content:space-between;align-items:center">
           <button onclick="removeSavedItem(${idx})" style="font-size:10px;color:var(--muted)">Delete</button>
-          <button onclick="openLoad('${item.img}', '${item.styleKey || 'coquette'}')" style="font-size:10.5px;font-weight:600;color:var(--red)">View ↗</button>
+          <button onclick="loadSavedLook(${idx})" style="font-size:10.5px;font-weight:600;color:var(--red)">Search ↗</button>
         </div>
       </div>
     `).join('');
@@ -2705,152 +1618,38 @@
     localStorage.setItem('dresserie_saved', JSON.stringify(list));
     renderSavedCloset();
     updateSavedBadge();
-    showToast('Look removed from closet');
+    showToast('Look removed');
   };
 
-  // Render Boards List
-  function renderBoardsList() {
-    const boards = getMoodboards();
-    const container = document.getElementById('boardsListContainer');
-    container.innerHTML = boards.map(b => `
-      <div style="background:#fff;padding:12px 14px;border-radius:12px;border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center">
-        <div>
-          <b style="font-size:13px;display:block">${b}</b>
-          <small style="font-size:10.5px;color:var(--muted)">Tap to add current look</small>
-        </div>
-        <button onclick="addLookToBoard('${b}')" style="background:var(--yellow);color:var(--brown);font:600 11px 'DM Mono',monospace;padding:6px 10px;border-radius:8px">
-          + Add
-        </button>
-      </div>
-    `).join('');
-  }
-
-  window.addLookToBoard = function(boardName) {
-    closeDrawer(moodModal);
-    showToast(`Added current fit to "${boardName}" ♡`);
+  window.loadSavedLook = function(idx) {
+    const list = getSavedCloset();
+    const item = list[idx];
+    if (!item) return;
+    activePieces = item.pieces;
+    document.getElementById('resultImg').src = item.img;
+    document.getElementById('detectedAestheticTitle').textContent = item.title;
+    closeDrawer(savedDrawer);
+    document.getElementById('home').style.display = 'none';
+    document.getElementById('results').classList.add('show');
+    renderGarmentCards();
   };
 
-  document.getElementById('saveBoardBtn').onclick = () => {
-    const input = document.getElementById('boardNameInput');
-    const val = input.value.trim();
-    if (!val) return;
-    saveMoodboard(val);
-    input.value = '';
-    renderBoardsList();
-    showToast(`Board "${val}" created ✦`);
-  };
-
-  // Direct Shopping Drawer ("Shop Complete Look")
-  const shopBtn = document.getElementById('shopBtn');
-  document.getElementById('closeShopDrawerBtn').onclick = () => closeDrawer(directShopDrawer);
-
-  shopBtn.onclick = () => {
-    const catalog = aestheticCatalogs[currentAesthetic] || aestheticCatalogs['coquette'];
-    const tierData = catalog.tiers[currentTier] || catalog.tiers['5k'];
-    const container = document.getElementById('shopModalList');
-    container.innerHTML = tierData.items.map(p => {
-      const link = getRetailerLink(p.cat, p.query, p.store);
-      return `
-        <div class="shop-item-card">
-          <img src="${p.img}" alt="${p.name}">
-          <div class="info">
-            <b>${p.name}</b>
-            <small>${p.cat} · ${p.store} · <b>${p.price}</b></small>
-          </div>
-          <a href="${link}" target="_blank" rel="noopener" class="btn-link">Buy on ${p.store} ↗</a>
-        </div>
-      `;
-    }).join('');
-    openDrawer(directShopDrawer);
-  };
-
-  // Save Look Button Action
-  const saveActions = [document.getElementById('actionSave'), document.getElementById('saveFitBtn')];
-  saveActions.forEach(btn => {
-    if (!btn) return;
-    btn.onclick = () => {
-      btn.style.color = 'var(--red)';
-      btn.textContent = '♥ Saved';
-      const look = {
-        id: Date.now().toString(),
-        title: document.getElementById('resultVibe').textContent || 'Curated Fit',
-        img: document.getElementById('resultImg').src,
-        price: document.getElementById('resultTotal').textContent,
-        styleKey: currentAesthetic
-      };
-      saveClosetItem(look);
-      showToast('Saved to your dream closet ♡');
+  // Save Fit Button Action
+  document.getElementById('saveFitBtn').onclick = () => {
+    const title = document.getElementById('detectedAestheticTitle').textContent;
+    const look = {
+      id: Date.now().toString(),
+      title: title,
+      img: currentUploadedImgSrc || document.getElementById('resultImg').src,
+      pieces: activePieces
     };
-  });
-
-  // Export Card / Polaroid Generator
-  document.getElementById('actionPolaroid').onclick = () => {
-    showToast('Rendering aesthetic look card… ✦');
-    const canvas = document.getElementById('hiddenCanvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = 600;
-    canvas.height = 760;
-
-    // Draw Cream Polaroid Frame
-    ctx.fillStyle = "#fffcf9";
-    ctx.fillRect(0, 0, 600, 760);
-
-    // Draw Image
-    const img = document.getElementById('resultImg');
-    ctx.drawImage(img, 40, 40, 520, 520);
-
-    // Draw Brand Header
-    ctx.fillStyle = "#261b20";
-    ctx.font = "bold 26px 'Playfair Display', serif";
-    ctx.fillText(document.getElementById('resultVibe').textContent, 40, 605);
-
-    // Draw Subtext & Total
-    ctx.fillStyle = "#bc3342";
-    ctx.font = "600 16px 'DM Mono', monospace";
-    ctx.fillText(document.getElementById('resultTotal').textContent + " · Curated Indian Dupe", 40, 640);
-
-    ctx.fillStyle = "#786d6d";
-    ctx.font = "14px 'DM Sans', sans-serif";
-    ctx.fillText("dresserie — find the fit. make it yours.", 40, 700);
-
-    try {
-      const dataUrl = canvas.toDataURL('image/png');
-      const a = document.createElement('a');
-      a.download = `dresserie-outfit-${Date.now()}.png`;
-      a.href = dataUrl;
-      a.click();
-      showToast('Polaroid card downloaded! Share on Stories ♡');
-    } catch(e) {
-      showToast('Export ready! Take a screenshot to share ✦');
-    }
+    const list = getSavedCloset();
+    list.unshift(look);
+    localStorage.setItem('dresserie_saved', JSON.stringify(list));
+    updateSavedBadge();
+    showToast('Outfit saved to your closet ♡');
   };
 
-  // Share CTA
-  document.getElementById('actionShare').onclick = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: 'dresserie — Found the fit',
-        text: `Found my outfit dupe on dresserie! ${document.getElementById('resultVibe').textContent} for ${document.getElementById('resultTotal').textContent}.`,
-        url: window.location.href
-      }).catch(() => {});
-    } else {
-      navigator.clipboard?.writeText(window.location.href);
-      showToast('Link copied to clipboard! Share with your bestie ✦');
-    }
-  };
-
-  // Bottom Nav Interactions
-  document.getElementById('navHome').onclick = () => {
-    document.getElementById('results').classList.remove('show');
-    document.getElementById('home').style.display = 'block';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-  document.getElementById('navDiscover').onclick = () => {
-    document.getElementById('home').querySelector('.obsessed').scrollIntoView({ behavior: 'smooth' });
-  };
-
-  // Initial Load
-  applyAesthetic('coquette', '5k');
   updateSavedBadge();
 </script>
 </body>
