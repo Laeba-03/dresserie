@@ -1,0 +1,13 @@
+{
+  "name": "dresserie",
+  "version": "1.0.0",
+  "description": "Drop any fashion screenshot and find real matching pieces on Myntra, Ajio, Zara India, and Nykaa.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["fashion", "outfit", "visual-search", "myntra", "zara", "ajio"],
+  "author": "dresserie",
+  "license": "MIT"
+}

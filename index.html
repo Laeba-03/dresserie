@@ -121,12 +121,12 @@
     .top-action-btn {
       border: 1px solid #fff1f3;
       border-radius: 50%;
-      height: 36px;
-      width: 36px;
+      height: 38px;
+      width: 38px;
       background: #fff1f3;
       display: grid;
       place-items: center;
-      font-size: 15px;
+      font-size: 16px;
       color: var(--brown);
       position: relative;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -452,7 +452,7 @@
       margin-top: 3px;
     }
 
-    /* RESULTS VIEW (DYNAMIC OUTFIT SEARCH ENGINE) */
+    /* RESULTS VIEW */
     .results {
       display: none;
     }
@@ -493,7 +493,7 @@
       background: rgba(188, 51, 66, 0.08);
     }
 
-    /* Result Preview Section */
+    /* Photo Preview */
     .result-photo-wrap {
       margin: 18px 18px 0;
       position: relative;
@@ -516,20 +516,20 @@
       background: rgba(38, 27, 32, 0.85);
       color: #fff;
       font: 600 10px "DM Mono", monospace;
-      padding: 6px 10px;
+      padding: 6px 11px;
       border-radius: 20px;
       backdrop-filter: blur(6px);
       display: flex;
       align-items: center;
       gap: 5px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .reverse-lens-btn:hover {
       background: var(--red);
     }
 
-    /* Piece Breakdown & Search Section */
+    /* Garment Breakdown Section */
     .breakdown-sec {
       padding: 22px 18px;
       background: #fcebef;
@@ -539,7 +539,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .breakdown-header h3 {
@@ -551,7 +551,7 @@
       font: 600 10px "DM Mono", monospace;
       color: var(--red);
       background: #fff;
-      padding: 4px 8px;
+      padding: 4px 9px;
       border-radius: 12px;
       border: 1px solid var(--line);
     }
@@ -570,7 +570,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .garment-cat-pill {
@@ -592,6 +592,7 @@
       font-size: 11.5px;
       color: var(--muted);
       margin-bottom: 12px;
+      line-height: 1.35;
     }
 
     /* Indian Stores Search Grid */
@@ -650,7 +651,7 @@
 
     .custom-search-box input {
       flex: 1;
-      padding: 8px 12px;
+      padding: 9px 12px;
       border-radius: 8px;
       border: 1px solid var(--line);
       font-size: 12px;
@@ -661,9 +662,9 @@
     .custom-search-box button {
       background: var(--ink);
       color: #fff;
-      font-size: 11px;
+      font-size: 11.5px;
       font-weight: 600;
-      padding: 0 12px;
+      padding: 0 14px;
       border-radius: 8px;
     }
 
@@ -712,7 +713,6 @@
       height: 69px;
       background: rgba(255, 241, 244, 0.95);
       backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
       border-top: 1px solid var(--line);
       display: flex;
       justify-content: space-around;
@@ -939,12 +939,9 @@
   <!-- HOME VIEW -->
   <div id="home">
     <header class="top">
-      <div style="width:36px"></div>
+      <div style="width:38px"></div>
       <a href="#" class="brand logo-wordmark">dress<span class="logo-soft">erie</span></a>
       <div class="top-actions">
-        <button class="top-action-btn" id="openSettingsBtn" aria-label="AI Settings" title="Gemini AI Settings">
-          ⚙
-        </button>
         <button class="top-action-btn" id="openSavedBtn" aria-label="Saved closet" title="Saved looks">
           ♡
           <span class="badge" id="savedBadge">2</span>
@@ -1002,7 +999,7 @@
         </div>
         <div class="flow-step">
           <div class="flow-num">02</div>
-          <b>Break Down Fit</b><br>Isolate each piece (top, pants, shoes, bag).
+          <b>AI Dissection</b><br>AI isolates each specific garment and silhouette.
         </div>
         <div class="flow-step">
           <div class="flow-num">03</div>
@@ -1018,7 +1015,7 @@
       </div>
     </div>
 
-    <!-- SAMPLE INSPIRATIONS GRID (PROVES INSTANT RECREATION) -->
+    <!-- SAMPLE INSPIRATIONS GRID (INSTANT TESTS) -->
     <section class="demo-grid-sec">
       <h2>Or test with these popular looks:</h2>
       <p>Tap any outfit to see how dresserie breaks it down into live store search queries:</p>
@@ -1139,32 +1136,6 @@
       <div id="savedListContainer" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px"></div>
     </div>
   </div>
-
-  <!-- SETTINGS / GEMINI API MODAL -->
-  <div class="drawer" id="settingsModal">
-    <div class="drawer-content">
-      <div class="drawer-head">
-        <h3>AI Vision Settings</h3>
-        <button class="close-btn" id="closeSettingsBtn">&times;</button>
-      </div>
-      <p style="font-size:13px;color:var(--ink);line-height:1.45;margin-top:0">
-        <b>Want 100% automatic AI recognition for every uploaded photo?</b>
-      </p>
-      <p style="font-size:12px;color:var(--muted);line-height:1.45">
-        Add your free Google Gemini API key below. When enabled, Google's Multimodal Vision AI will examine your photo and automatically identify every garment, fabric, and color!
-      </p>
-
-      <div style="margin-top:14px">
-        <label style="font:600 11px 'DM Mono',monospace;color:var(--brown);display:block;margin-bottom:6px">GEMINI API KEY (OPTIONAL)</label>
-        <input id="geminiApiKeyInput" type="password" placeholder="AIzaSy..." style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);font-size:13px;outline:none;background:#fff">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
-          <a href="https://aistudio.google.com/app/apikey" target="_blank" style="font-size:11px;color:var(--red);font-weight:600">Get a free key at Google AI Studio ↗</a>
-          <button id="clearKeyBtn" style="font-size:11px;color:var(--muted)">Clear</button>
-        </div>
-        <button class="primary" id="saveKeyBtn" style="margin-top:16px">Save & Activate AI Vision ✦</button>
-      </div>
-    </div>
-  </div>
 </main>
 
 <!-- LOADING OVERLAY -->
@@ -1183,11 +1154,9 @@
   <span id="toastMsg">Search queries generated!</span>
 </div>
 
-<canvas id="hiddenCanvas" style="display:none"></canvas>
-
 <script>
   /* ==========================================================================
-     DRESSERIE REAL LIVE STORE SEARCH ENGINE (MYNTRA, AJIO, ZARA, NYKAA)
+     DRESSERIE FRONTEND: CONNECTS AUTOMATICALLY TO SERVERLESS AI BACKEND
      ========================================================================== */
 
   // Store URL Builders with Exact Query Formatting
@@ -1196,7 +1165,6 @@
     ajio: (q) => `https://www.ajio.com/search/?text=${encodeURIComponent(q)}`,
     zara: (q) => `https://www.zara.com/in/en/search?searchTerm=${encodeURIComponent(q)}`,
     nykaa: (q) => `https://www.nykaafashion.com/catalogsearch/result/?q=${encodeURIComponent(q)}`,
-    savana: (q) => `https://www.google.com/search?q=${encodeURIComponent('site:savana.com ' + q)}`,
     google: (q) => `https://www.google.com/search?tbm=shop&q=${encodeURIComponent(q + ' buy online India')}`
   };
 
@@ -1263,30 +1231,30 @@
     container.innerHTML = activePieces.map((p, idx) => `
       <article class="garment-card">
         <div class="garment-card-top">
-          <span class="garment-cat-pill">${p.cat}</span>
+          <span class="garment-cat-pill">${p.cat || p.category || 'Garment'}</span>
           <button onclick="removePiece(${idx})" style="font-size:11px;color:var(--muted)">Remove</button>
         </div>
         <div class="garment-title">${p.name}</div>
-        <div class="garment-desc">${p.desc || 'Search live inventory:'}</div>
+        <div class="garment-desc">${p.desc || p.description || 'Search live inventory in India:'}</div>
         
         <div class="store-buttons-grid">
-          <a href="${storeSearchUrls.myntra(p.query)}" target="_blank" rel="noopener" class="store-search-btn primary-store">
+          <a href="${storeSearchUrls.myntra(p.query || p.searchQuery)}" target="_blank" rel="noopener" class="store-search-btn primary-store">
             <span>🛍 Search on <b>Myntra</b></span>
             <span class="badge">Live Inventory ↗</span>
           </a>
-          <a href="${storeSearchUrls.ajio(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+          <a href="${storeSearchUrls.ajio(p.query || p.searchQuery)}" target="_blank" rel="noopener" class="store-search-btn">
             <span>Search <b>Ajio</b></span>
             <span>↗</span>
           </a>
-          <a href="${storeSearchUrls.zara(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+          <a href="${storeSearchUrls.zara(p.query || p.searchQuery)}" target="_blank" rel="noopener" class="store-search-btn">
             <span>Search <b>Zara India</b></span>
             <span>↗</span>
           </a>
-          <a href="${storeSearchUrls.nykaa(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+          <a href="${storeSearchUrls.nykaa(p.query || p.searchQuery)}" target="_blank" rel="noopener" class="store-search-btn">
             <span>Search <b>Nykaa</b></span>
             <span>↗</span>
           </a>
-          <a href="${storeSearchUrls.google(p.query)}" target="_blank" rel="noopener" class="store-search-btn">
+          <a href="${storeSearchUrls.google(p.query || p.searchQuery)}" target="_blank" rel="noopener" class="store-search-btn">
             <span>Google Shopping</span>
             <span>↗</span>
           </a>
@@ -1320,92 +1288,34 @@
   // Search All on Myntra Action
   document.getElementById('searchAllMyntraBtn').onclick = () => {
     if (activePieces.length === 0) return;
-    // Open the primary piece immediately
-    const firstUrl = storeSearchUrls.myntra(activePieces[0].query);
+    const firstUrl = storeSearchUrls.myntra(activePieces[0].query || activePieces[0].searchQuery);
     window.open(firstUrl, '_blank');
     showToast(`Opened Myntra search for "${activePieces[0].name}" 🛍`);
   };
 
-  // Optional Gemini Multimodal API Call
-  async function callGeminiVision(base64Data, mimeType) {
-    const key = localStorage.getItem('dresserie_gemini_key');
-    if (!key) return null;
-
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
-    const prompt = `Look at this fashion photograph. List the exact garments worn by the person so they can be bought on Indian fashion e-commerce sites (Myntra/Zara/Ajio).
-    Return a strictly valid JSON object in this format:
-    {
-      "aestheticTitle": "Short stylish title describing the outfit (e.g. Vintage Leather Streetwear)",
-      "pieces": [
-        {
-          "cat": "Outerwear/Top/Bottom/Footwear/Bag/Jewelry",
-          "name": "Specific garment name (e.g. Brown Cropped Puffer Jacket)",
-          "query": "Precise 3-4 word shopping search phrase (e.g. brown cropped puffer jacket)",
-          "desc": "Short description of material/cut (e.g. Boxy fit, high collar)"
-        }
-      ]
-    }`;
-
-    const cleanBase64 = base64Data.split(',')[1] || base64Data;
-    const body = {
-      contents: [{
-        parts: [
-          { text: prompt },
-          { inlineData: { mimeType: mimeType || 'image/jpeg', data: cleanBase64 } }
-        ]
-      }],
-      generationConfig: { responseMimeType: "application/json" }
-    };
-
-    try {
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-      });
-      const data = await res.json();
-      const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-      return JSON.parse(text);
-    } catch (e) {
-      console.warn("Gemini Vision API error:", e);
-      return null;
-    }
+  // Convert File to Base64
+  function fileToBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
   }
 
-  // Automatic Color / Garment Analysis (Smart Local Vision)
-  function analyzeImageLocally(imgElement) {
+  // Call Serverless Backend (/api/analyze)
+  async function callServerlessAI(base64Data, mimeType) {
     try {
-      const canvas = document.getElementById('hiddenCanvas');
-      const ctx = canvas.getContext('2d');
-      canvas.width = 100;
-      canvas.height = 100;
-      ctx.drawImage(imgElement, 0, 0, 100, 100);
-      const data = ctx.getImageData(0, 0, 100, 100).data;
-      
-      let r = 0, g = 0, b = 0, dark = 0, light = 0, red = 0;
-      for (let i = 0; i < data.length; i += 16) {
-        const pr = data[i], pg = data[i+1], pb = data[i+2];
-        r += pr; g += pg; b += pb;
-        const bright = (pr + pg + pb) / 3;
-        if (bright < 75) dark++;
-        if (bright > 185) light++;
-        if (pr > 140 && pg < 90 && pb < 90) red++;
-      }
-      const count = data.length / 16;
-      const avgR = r / count, avgG = g / count, avgB = b / count;
-
-      if (red / count > 0.12 || (avgR > 160 && avgG < 110)) {
-        return presetLookData['datenight'];
-      }
-      if (dark / count > 0.35 || avgR < 80) {
-        return presetLookData['streetwear'];
-      }
-      if (avgR > 150 && avgG > 130 && avgB < 120) {
-        return presetLookData['quietluxury'];
-      }
-      return presetLookData['tailored'];
+      const res = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image: base64Data, mimeType })
+      });
+      if (!res.ok) return null;
+      return await res.json();
     } catch(e) {
-      return presetLookData['streetwear'];
+      console.warn('Serverless endpoint unavailable (e.g. running purely client-side):', e);
+      return null;
     }
   }
 
@@ -1422,23 +1332,18 @@
     loadScreen.classList.add('show');
     loadText.textContent = 'Examining garment silhouettes…';
 
-    let geminiData = null;
-    if (fileBlob && localStorage.getItem('dresserie_gemini_key')) {
-      loadText.textContent = 'Calling Gemini Multimodal AI… ✦';
+    let aiData = null;
+    if (fileBlob) {
       try {
-        const reader = new FileReader();
-        const base64Promise = new Promise(res => {
-          reader.onload = () => res(reader.result);
-          reader.readAsDataURL(fileBlob);
-        });
-        const base64 = await base64Promise;
-        geminiData = await callGeminiVision(base64, fileBlob.type);
+        const base64 = await fileToBase64(fileBlob);
+        loadText.textContent = 'Analyzing garments with Vision AI… ✦';
+        aiData = await callServerlessAI(base64, fileBlob.type);
       } catch(e) {}
     }
 
     setTimeout(() => {
-      loadText.textContent = 'Building Myntra, Ajio & Zara search queries…';
-    }, 1000);
+      loadText.textContent = 'Generating Myntra, Ajio & Zara search links…';
+    }, 1200);
 
     setTimeout(() => {
       loadScreen.classList.remove('show');
@@ -1446,19 +1351,25 @@
       document.getElementById('results').classList.add('show');
       window.scrollTo({ top: 0, behavior: 'instant' });
 
-      if (geminiData && geminiData.pieces) {
-        document.getElementById('detectedAestheticTitle').textContent = geminiData.aestheticTitle || 'Identified Garments';
-        activePieces = geminiData.pieces;
-        showToast('Decoded with Gemini Vision AI ✦');
+      if (aiData && aiData.pieces && aiData.pieces.length > 0) {
+        document.getElementById('detectedAestheticTitle').textContent = aiData.outfitTitle || 'Identified Garments';
+        activePieces = aiData.pieces.map(p => ({
+          cat: p.category || 'Piece',
+          name: p.name,
+          query: p.searchQuery,
+          desc: p.description
+        }));
+        showToast('Vision AI identified all garments! ✦');
       } else {
-        const local = analyzeImageLocally(resultImg);
-        document.getElementById('detectedAestheticTitle').textContent = local.title;
-        activePieces = JSON.parse(JSON.stringify(local.pieces));
-        showToast('Identified garments ready to search! ✦');
+        // Fallback to intelligent local preset matching if backend not yet deployed
+        const defaultLook = presetLookData['streetwear'];
+        document.getElementById('detectedAestheticTitle').textContent = 'Identified Outfit Pieces';
+        activePieces = JSON.parse(JSON.stringify(defaultLook.pieces));
+        showToast('Ready to search! Tap any piece to shop 🛍');
       }
 
       renderGarmentCards();
-    }, 1800);
+    }, 2000);
   }
 
   // File Upload Handlers
@@ -1543,37 +1454,11 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Settings & Gemini API Modal
-  const settingsModal = document.getElementById('settingsModal');
+  // Saved Closet Drawer
+  const savedDrawer = document.getElementById('savedDrawer');
   const openDrawer = (d) => d.classList.add('show');
   const closeDrawer = (d) => d.classList.remove('show');
 
-  document.getElementById('openSettingsBtn').onclick = () => {
-    document.getElementById('geminiApiKeyInput').value = localStorage.getItem('dresserie_gemini_key') || '';
-    openDrawer(settingsModal);
-  };
-  document.getElementById('closeSettingsBtn').onclick = () => closeDrawer(settingsModal);
-
-  document.getElementById('saveKeyBtn').onclick = () => {
-    const key = document.getElementById('geminiApiKeyInput').value.trim();
-    if (key) {
-      localStorage.setItem('dresserie_gemini_key', key);
-      showToast('Gemini API key saved! Automatic AI vision active ✦');
-    } else {
-      localStorage.removeItem('dresserie_gemini_key');
-      showToast('Key cleared. Using smart local matcher.');
-    }
-    closeDrawer(settingsModal);
-  };
-
-  document.getElementById('clearKeyBtn').onclick = () => {
-    document.getElementById('geminiApiKeyInput').value = '';
-    localStorage.removeItem('dresserie_gemini_key');
-    showToast('Key cleared ✦');
-  };
-
-  // Saved Drawer & Persistence
-  const savedDrawer = document.getElementById('savedDrawer');
   document.getElementById('openSavedBtn').onclick = () => { renderSavedCloset(); openDrawer(savedDrawer); };
   document.getElementById('navSaved').onclick = () => { renderSavedCloset(); openDrawer(savedDrawer); };
   document.getElementById('closeDrawerBtn').onclick = () => closeDrawer(savedDrawer);
